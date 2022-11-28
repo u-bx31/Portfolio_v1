@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bg-dark-blue {
+  background-color: #171717;
+}
+
+.c-nav_links h4 {
+  margin: 0;
+  font-family: "Lucida Console";
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  letter-spacing: 0.135em;
+}
+.c-nav_links h4:hover {
+  color: #939BAE;
+}
+
+@media (max-width: 991px) {
+  .offcanvas .offcanvas-header {
+    background-color: #171717;
+  }
+  .offcanvas .offcanvas-body {
+    overflow: visible;
+    background-color: #878787;
+  }
+}
+/*Main app*/
+/*Intro section*/
+/*Navbar Section*//*# sourceMappingURL=Style.css.map */

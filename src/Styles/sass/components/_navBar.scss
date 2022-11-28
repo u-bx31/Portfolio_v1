@@ -1,0 +1,32 @@
+@use "../abstracts" as *;
+
+.c-nav {
+  
+  &_links {
+    h4 {
+      margin: 0;
+      font-family: $fontLucida;
+      color: $White;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 21px;
+
+      letter-spacing: 0.135em;
+      &:hover {
+        color: $dark-gray;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .offcanvas {
+    .offcanvas-header{
+        background-color: $black;
+    }
+    .offcanvas-body {
+      overflow: visible;
+      background-color: $light-gray;
+    }
+  }
+}
