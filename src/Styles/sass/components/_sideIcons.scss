@@ -1,0 +1,25 @@
+@use "../abstracts" as *;
+
+.side_up {
+  &_icons {
+    list-style: none;
+    width: 30px;
+    position: fixed;
+    bottom: 0px;
+    left: 20px;
+    right: auto;
+    z-index: 10;
+    &::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 150px;
+      margin: 0px auto;
+      background-color: $White;
+    }
+    li {
+      padding: 4px 0;
+    }
+  }
+}
+

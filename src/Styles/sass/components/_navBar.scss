@@ -1,7 +1,9 @@
 @use "../abstracts" as *;
 
 .c-nav {
-  
+  &_logo{
+    width: 90%;
+  }
   &_links {
     h4 {
       margin: 0;
@@ -9,8 +11,7 @@
       color: $White;
       font-style: normal;
       font-weight: 400;
-      font-size: 21px;
-
+      font-size: 1.3rem;
       letter-spacing: 0.135em;
       &:hover {
         color: $dark-gray;

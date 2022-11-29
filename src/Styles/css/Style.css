@@ -1,26 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@400;700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+* ::-webkit-scrollbar {
+  width: 5px;
+  scroll-behavior: smooth;
+}
+* ::-webkit-scrollbar-track {
+  background: #222328;
+}
+* ::-webkit-scrollbar-thumb {
+  background: #888;
+}
+* ::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-width: 280px;
 }
 
 .bg-dark-blue {
   background-color: #171717;
 }
 
+.c-nav_logo {
+  width: 90%;
+}
 .c-nav_links h4 {
   margin: 0;
   font-family: "Lucida Console";
   color: white;
   font-style: normal;
   font-weight: 400;
-  font-size: 21px;
+  font-size: 1.3rem;
   letter-spacing: 0.135em;
 }
 .c-nav_links h4:hover {
@@ -36,6 +59,211 @@ body {
     background-color: #878787;
   }
 }
+.c-hero_img1 {
+  width: 100%;
+}
+.c-hero_headrs_gretings {
+  background-color: #939BAE;
+  width: 90%;
+  height: 73px;
+}
+.c-hero_headrs_gretings h3 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 39px;
+  line-height: 70px;
+  letter-spacing: -0.015em;
+  color: #fefffe;
+}
+.c-hero_headrs_profesion h1 {
+  height: 195px;
+  font-family: "Mukta Malar", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 85px;
+  line-height: 92px;
+  /* or 96% */
+  color: transparent;
+  letter-spacing: 0.07em;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+}
+
+svg#freepik_stories-code-typing:not(.animated) .animable {
+  opacity: 0;
+}
+
+svg#freepik_stories-code-typing.animated #freepik--Hands--inject-19 {
+  -webkit-animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideUp;
+          animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideUp;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+svg#freepik_stories-code-typing.animated #freepik--Coffee--inject-19 {
+  -webkit-animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn, 3s Infinite linear wind;
+          animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn, 3s Infinite linear wind;
+  -webkit-animation-delay: 0s, 1s;
+          animation-delay: 0s, 1s;
+}
+
+svg#freepik_stories-code-typing.animated #freepik--speech-bubbles--inject-19 {
+  -webkit-animation: 1.4s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn, 3s Infinite linear floating;
+          animation: 1.4s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn, 3s Infinite linear floating;
+  -webkit-animation-delay: 0s, 1.4s;
+          animation-delay: 0s, 1.4s;
+}
+
+@media (max-width: 768px) {
+  .c-hero_img1 {
+    width: 75%;
+  }
+  .c-hero_headrs_gretings h3 {
+    font-size: 30px;
+    line-height: 80px;
+  }
+  .c-hero_headrs_profesion h1 {
+    font-size: 76px;
+    line-height: 92px;
+  }
+}
+@media (max-width: 500px) {
+  .c-hero_img1 {
+    width: 100%;
+  }
+  .c-hero_headrs_gretings {
+    width: 100%;
+  }
+  .c-hero_headrs_gretings h3 {
+    font-size: 30px;
+    line-height: 60px;
+  }
+  .c-hero_headrs_profesion h1 {
+    height: 145px;
+    font-size: 56px;
+    line-height: 70px;
+    -webkit-text-stroke-width: 1.5px;
+  }
+}
+@media (max-width: 375px) {
+  .c-hero_headrs_gretings h3 {
+    font-size: 1.4rem;
+    line-height: 45px;
+  }
+  .c-hero_headrs_profesion h1 {
+    font-size: 2.5rem;
+    line-height: 60px;
+    -webkit-text-stroke-width: 1px;
+  }
+}
+@-webkit-keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: inherit;
+  }
+}
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: inherit;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes wind {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  75% {
+    transform: rotate(-1deg);
+  }
+}
+@keyframes wind {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  75% {
+    transform: rotate(-1deg);
+  }
+}
+@-webkit-keyframes floating {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes floating {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.side_up_icons {
+  list-style: none;
+  width: 30px;
+  position: fixed;
+  bottom: 0px;
+  left: 20px;
+  right: auto;
+  z-index: 10;
+}
+.side_up_icons::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 150px;
+  margin: 0px auto;
+  background-color: white;
+}
+.side_up_icons li {
+  padding: 4px 0;
+}
+
 /*Main app*/
 /*Intro section*/
-/*Navbar Section*//*# sourceMappingURL=Style.css.map */
+/*Navbar Section*/
+/*Hero Section*/
+/*sideIcons Section*//*# sourceMappingURL=Style.css.map */

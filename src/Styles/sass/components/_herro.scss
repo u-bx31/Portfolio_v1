@@ -1,0 +1,168 @@
+@use "../abstracts" as *;
+
+.c-hero {
+  &_img1 {
+    width: 100%;
+  }
+  &_headrs {
+    &_gretings {
+      background-color: $dark-gray;
+      width: 90%;
+      height: 73px;
+      h3 {
+        font-family: $fontMontserrat;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 39px;
+        line-height: 70px;
+        letter-spacing: -0.015em;
+
+        color: #fefffe;
+      }
+    }
+    &_profesion {
+      h1 {
+        height: 195px;
+        font-family: $fontMukaMalar;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 85px;
+        line-height: 92px;
+        /* or 96% */
+        color: transparent;
+        letter-spacing: 0.07em;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: $White;
+      }
+    }
+  }
+}
+
+svg#freepik_stories-code-typing:not(.animated) .animable {
+  opacity: 0;
+}
+svg#freepik_stories-code-typing.animated #freepik--Hands--inject-19 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideUp;
+  animation-delay: 0s;
+}
+svg#freepik_stories-code-typing.animated #freepik--Coffee--inject-19 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn,
+    3s Infinite linear wind;
+  animation-delay: 0s, 1s;
+}
+svg#freepik_stories-code-typing.animated #freepik--speech-bubbles--inject-19 {
+  animation: 1.4s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn,
+    3s Infinite linear floating;
+  animation-delay: 0s, 1.4s;
+}
+
+
+@media (max-width: 768px) {
+  .c-hero {
+    &_img1 {
+      width: 75%;
+    }
+    &_headrs {
+      &_gretings {
+        h3 {
+          font-size: 30px;
+          line-height: 80px;
+        }
+      }
+      &_profesion {
+        h1 {
+          font-size: 76px;
+          line-height: 92px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .c-hero {
+    &_img1 {
+      width: 100%;
+    }
+    &_headrs {
+      &_gretings {
+        width: 100%;
+        h3 {
+          font-size: 30px;
+          line-height: 60px;
+        }
+      }
+      &_profesion {
+        h1 {
+          height: 145px;
+          font-size: 56px;
+          line-height: 70px;
+          -webkit-text-stroke-width: 1.5px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 375px) {
+  .c-hero {
+    &_headrs {
+      &_gretings {
+        h3 {
+          font-size: 1.4rem;
+          line-height: 45px;
+        }
+      }
+      &_profesion {
+        h1 {
+          font-size: 2.5rem;
+          line-height: 60px;
+          -webkit-text-stroke-width: 1px;
+        }
+      }
+    }
+  }
+}
+
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: inherit;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes wind {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  75% {
+    transform: rotate(-1deg);
+  }
+}
+@keyframes floating {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform:translateY(0px)
+  }
+}
