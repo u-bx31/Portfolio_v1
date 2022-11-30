@@ -90,31 +90,6 @@ body {
   -webkit-text-stroke-color: white;
 }
 
-svg#freepik_stories-code-typing:not(.animated) .animable {
-  opacity: 0;
-}
-
-svg#freepik_stories-code-typing.animated #freepik--Hands--inject-19 {
-  -webkit-animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideUp;
-          animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideUp;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-}
-
-svg#freepik_stories-code-typing.animated #freepik--Coffee--inject-19 {
-  -webkit-animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn, 3s Infinite linear wind;
-          animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn, 3s Infinite linear wind;
-  -webkit-animation-delay: 0s, 1s;
-          animation-delay: 0s, 1s;
-}
-
-svg#freepik_stories-code-typing.animated #freepik--speech-bubbles--inject-19 {
-  -webkit-animation: 1.4s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn, 3s Infinite linear floating;
-          animation: 1.4s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn, 3s Infinite linear floating;
-  -webkit-animation-delay: 0s, 1.4s;
-          animation-delay: 0s, 1.4s;
-}
-
 @media (max-width: 768px) {
   .c-hero_img1 {
     width: 75%;
@@ -157,90 +132,6 @@ svg#freepik_stories-code-typing.animated #freepik--speech-bubbles--inject-19 {
     -webkit-text-stroke-width: 1px;
   }
 }
-@-webkit-keyframes slideUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: inherit;
-  }
-}
-@keyframes slideUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: inherit;
-  }
-}
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes wind {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(1deg);
-  }
-  75% {
-    transform: rotate(-1deg);
-  }
-}
-@keyframes wind {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(1deg);
-  }
-  75% {
-    transform: rotate(-1deg);
-  }
-}
-@-webkit-keyframes floating {
-  0% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-@keyframes floating {
-  0% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
 .side_up_icons {
   list-style: none;
   width: 30px;
@@ -266,4 +157,5 @@ svg#freepik_stories-code-typing.animated #freepik--speech-bubbles--inject-19 {
 /*Intro section*/
 /*Navbar Section*/
 /*Hero Section*/
-/*sideIcons Section*//*# sourceMappingURL=Style.css.map */
+/*sideIcons Section*/
+/*About Section*//*# sourceMappingURL=Style.css.map */

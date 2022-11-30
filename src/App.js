@@ -5,6 +5,7 @@ import CustomNavbar from "./Components/NavBar";
 import { useEffect } from "react";
 import Hero from "./Components/Hero";
 import SideIcons from "./Components/sideIcons";
+import About from "./Components/About";
 
 const content = {
   hidden: { opacity: 0 },
@@ -59,10 +60,11 @@ function App() {
       <motion.div initial="hidden"
         animate="visible"
         variants={content} className="container-lg App">
-        <motion.header variants={headrVariants}><CustomNavbar /></motion.header>
+        <motion.header variants={headrVariants}><CustomNavbar /></motion.header> 
         <motion.main variants={mainVariants}>
           <Hero />
           <SideIcons />
+          <About />
         </motion.main>
       </motion.div>
     </>
