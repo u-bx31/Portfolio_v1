@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import img2 from '../images/undraw_programming.svg'
-import ArrowDown from './icons/svgArrow'
+import ArrowDown from './icons/svgArrowScroll'
 
 const heroVariants = {
     hidden: {
@@ -76,7 +76,7 @@ const waveVariants = {
 const Hero = () => {
     return (
         <>
-            <motion.div variants={heroVariants} initial='hidden' animate='visible' className="d-flex c-hero justify-content-between flex-lg-row-reverse text-lg-start text-center flex-column align-items-center pt-lg-5 mt-lg-2 ">
+            <motion.div variants={heroVariants} initial='hidden' animate='visible' className="d-flex c-hero justify-content-between flex-lg-row-reverse text-lg-start text-center flex-column align-items-center pt-lg-5 mt-lg-2 pt-4 ">
                 <motion.div variants={imgVariants} className="w-100 text-center">
                     <img src={img2} alt="" className="c-hero_img1" />
                 </motion.div>

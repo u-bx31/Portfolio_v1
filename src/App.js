@@ -19,6 +19,7 @@ const content = {
 
 const setBodyColor = (color) => {
   document.body.style.backgroundColor = `${color}`
+
 }
 
 const headrVariants ={
@@ -52,6 +53,7 @@ const mainVariants ={
 function App() {
   useEffect(() => {
     setBodyColor('#222328');
+    
   }, [])
 
   return (
@@ -59,7 +61,7 @@ function App() {
       <Intro />
       <motion.div initial="hidden"
         animate="visible"
-        variants={content} className="container-lg App">
+        variants={content} className="container-lg  App">
         <motion.header variants={headrVariants}><CustomNavbar /></motion.header> 
         <motion.main variants={mainVariants}>
           <Hero />

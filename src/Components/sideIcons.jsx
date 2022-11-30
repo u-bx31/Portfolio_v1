@@ -1,5 +1,5 @@
-import GithubIcon from './icons/gitHub'
-import LinkdinIcon from './icons/linkdin'
+import GithubIcon from './icons/svgGitHub'
+import LinkdinIcon from './icons/svgLinkdin'
 
 const SideIcons = () => {
     return (<>

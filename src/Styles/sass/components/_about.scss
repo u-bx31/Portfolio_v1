@@ -1,0 +1,78 @@
+@use "../abstracts" as *;
+
+.c-about {
+  &_headr {
+    &_text {
+      h3 {
+        font-family: $fontMontserrat;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.5rem;
+
+        color: $dark-gray;
+        position: relative;
+        &::before {
+          position: absolute;
+          content: url("/src/images/Frame28.png");
+          left: -62px;
+          top: -35px;
+          z-index: -1;
+        }
+        &::after {
+          position: absolute;
+          content: url("/src/images/Frame27.png");
+          left: -15px;
+          top: 1px;
+          z-index: -1;
+        }
+      }
+    }
+  }
+  &_svg {
+    stroke: $light-blue;
+  }
+  &_desc {
+    font-size: 1.3rem;
+    line-height: 2.9rem;
+    color: $mid-white;
+  }
+}
+
+@media (max-width: 768px) {
+  .c-about {
+    &_headr {
+      &_text {
+        h3 {
+          font-size: 1.9rem;
+        }
+      }
+    }
+    &_svg {
+      height: 2rem;
+    }
+    &_desc {
+      font-size: 1.2rem;
+      line-height: 2.2rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .c-about {
+    &_headr {
+      &_text {
+        h3 {
+          font-size: 1.6rem;
+        }
+      }
+    }
+    &_svg {
+      height: 1.8rem;
+      width: 3rem;
+    }
+    &_desc {
+      font-size: 1rem;
+      line-height: 1.6rem;
+    }
+  }
+}

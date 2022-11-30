@@ -2,6 +2,8 @@
 
 @use "../abstracts" as *;
 
-.bg-dark-blue{
+.c-intro{
     background-color: $black;
+    z-index: 999;
+    position: fixed;
 }

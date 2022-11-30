@@ -30,8 +30,10 @@ body {
   min-width: 280px;
 }
 
-.bg-dark-blue {
+.c-intro {
   background-color: #171717;
+  z-index: 999;
+  position: fixed;
 }
 
 .c-nav_logo {
@@ -153,6 +155,62 @@ body {
   padding: 4px 0;
 }
 
+.c-about_headr_text h3 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #939BAE;
+  position: relative;
+}
+.c-about_headr_text h3::before {
+  position: absolute;
+  content: url("/src/images/Frame28.png");
+  left: -62px;
+  top: -35px;
+  z-index: -1;
+}
+.c-about_headr_text h3::after {
+  position: absolute;
+  content: url("/src/images/Frame27.png");
+  left: -15px;
+  top: 1px;
+  z-index: -1;
+}
+.c-about_svg {
+  stroke: #333A72;
+}
+.c-about_desc {
+  font-size: 1.3rem;
+  line-height: 2.9rem;
+  color: #D8E1FA;
+}
+
+@media (max-width: 768px) {
+  .c-about_headr_text h3 {
+    font-size: 1.9rem;
+  }
+  .c-about_svg {
+    height: 2rem;
+  }
+  .c-about_desc {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+  }
+}
+@media (max-width: 500px) {
+  .c-about_headr_text h3 {
+    font-size: 1.6rem;
+  }
+  .c-about_svg {
+    height: 1.8rem;
+    width: 3rem;
+  }
+  .c-about_desc {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+}
 /*Main app*/
 /*Intro section*/
 /*Navbar Section*/
