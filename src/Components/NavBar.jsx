@@ -37,7 +37,7 @@ const CustomNavbar = () => {
                             <CloseButton variant="white" onClick={()=> handleClose() } />
                         </Offcanvas.Header>
                         <Offcanvas.Body className="m-lg-0 m-2 h-auto  rounded-3">
-                            <Nav className="justify-content-end flex-grow-1 pe-3">
+                            <Nav className="justify-content-end align-items-center flex-grow-1 pe-3">
                                 <Nav.Link href="" className='px-sm-4 py-lg-0 py-3 text-center c-nav_links'  >
                                     <h4>Home</h4>
                                 </Nav.Link>
@@ -45,10 +45,16 @@ const CustomNavbar = () => {
                                     <h4>About</h4>
                                 </Nav.Link>
                                 <Nav.Link href="" className='px-sm-4 py-lg-0 py-3 text-center c-nav_links' >
+                                    <h4>Projects</h4>
+                                </Nav.Link>
+                                <Nav.Link href="" className='px-sm-4 py-lg-0 py-3 text-center c-nav_links' >
                                     <h4>Skills</h4>
                                 </Nav.Link>
                                 <Nav.Link href="" className='px-sm-4 py-lg-0 py-3 text-center c-nav_links' >
                                     <h4>Contact</h4>
+                                </Nav.Link>
+                                <Nav.Link href="" className='px-sm-4 py-lg-0 py-3 text-center c-nav_links' >
+                                    <button className='btn btn-outline-light'>Resume</button>
                                 </Nav.Link>
                             </Nav>
                         </Offcanvas.Body>

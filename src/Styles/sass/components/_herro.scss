@@ -35,9 +35,17 @@
         -webkit-text-stroke-color: $White;
       }
     }
+    &_btns {
+      &_hire {
+        &:hover {
+          svg {
+            fill:$dark-gray;
+          }
+        }
+      }
+    }
   }
 }
-
 
 @media (max-width: 768px) {
   .c-hero {
@@ -48,7 +56,6 @@
       &_gretings {
         h3 {
           font-size: 30px;
-          line-height: 80px;
         }
       }
       &_profesion {
@@ -71,7 +78,7 @@
         width: 100%;
         h3 {
           font-size: 30px;
-          line-height: 60px;
+
         }
       }
       &_profesion {
@@ -91,7 +98,6 @@
       &_gretings {
         h3 {
           font-size: 1.4rem;
-          line-height: 45px;
         }
       }
       &_profesion {

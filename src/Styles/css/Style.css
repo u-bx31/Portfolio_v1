@@ -22,6 +22,15 @@
 * ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+* .btn_link {
+  background-color: transparent;
+  border: none;
+  color: white;
+  position: relative;
+}
+* .btn_link:hover {
+  color: #939BAE;
+}
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -45,7 +54,7 @@ body {
   color: white;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   letter-spacing: 0.135em;
 }
 .c-nav_links h4:hover {
@@ -91,6 +100,9 @@ body {
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: white;
 }
+.c-hero_headrs_btns_hire:hover svg {
+  fill: #939BAE;
+}
 
 @media (max-width: 768px) {
   .c-hero_img1 {
@@ -98,7 +110,6 @@ body {
   }
   .c-hero_headrs_gretings h3 {
     font-size: 30px;
-    line-height: 80px;
   }
   .c-hero_headrs_profesion h1 {
     font-size: 76px;
@@ -114,7 +125,6 @@ body {
   }
   .c-hero_headrs_gretings h3 {
     font-size: 30px;
-    line-height: 60px;
   }
   .c-hero_headrs_profesion h1 {
     height: 145px;
@@ -126,7 +136,6 @@ body {
 @media (max-width: 375px) {
   .c-hero_headrs_gretings h3 {
     font-size: 1.4rem;
-    line-height: 45px;
   }
   .c-hero_headrs_profesion h1 {
     font-size: 2.5rem;
@@ -184,6 +193,20 @@ body {
   font-size: 1.3rem;
   line-height: 2.9rem;
   color: #D8E1FA;
+}
+.c-about_desc .c-underLinebroder::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 300ms ease-in-out;
+}
+.c-about_desc .c-underLinebroder:hover::before {
+  transform: scaleX(1);
 }
 
 @media (max-width: 768px) {

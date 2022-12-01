@@ -18,7 +18,7 @@ const blackBox = {
     },
     visible: {
         y: '-100vh',
-        transition: { delay: 4, duration: .9, ease: "easeInOut" }
+        transition: { delay : 3,duration: .9, ease: "easeInOut" }
     },
 };
 
