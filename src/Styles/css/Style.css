@@ -262,7 +262,9 @@ body {
   height: 60px;
   border-radius: 10px;
   background-color: #393939;
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 .c_skills_cmd-app_top::after {
   position: absolute;

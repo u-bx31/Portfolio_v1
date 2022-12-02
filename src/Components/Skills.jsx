@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import IconsArrows from './icons/svgArows';
 import img_html from '../images/Logos/html5-plain.svg';
 import img_css from '../images/Logos/css3-plain.svg';
@@ -11,6 +11,9 @@ import img_js from '../images/Logos/javascript-original.svg';
 import img_sql from '../images/Logos/microsoftsqlserver-plain-wordmark.svg';
 import img_react from '../images/Logos/react-original-wordmark.svg';
 import img_sass from '../images/Logos/sass-original.svg';
+import img_github from '../images/Logos/github-original-wordmark.svg';
+import img_vscode from '../images/Logos/vscode-original.svg';
+import img_vs from '../images/Logos/visualstudio-plain.svg';
 
 const skills = [
     {
@@ -63,6 +66,22 @@ const skills = [
         comand: 'cd GIt',
         img_skil: img_git
     },
+    {
+        specialize: 'dev-tools',
+        comand: 'cd git_hub',
+        img_skil: img_github
+    },
+    {
+        specialize: 'dev-tools',
+        comand: 'cd vs Code',
+        img_skil: img_vscode
+    },
+    {
+        specialize: 'dev-tools',
+        comand: 'cd visual Studio',
+        img_skil: img_vs
+    },
+
 ]
 const containerVaritans = {
     hidden: {
@@ -122,6 +141,8 @@ const Skills = () => {
 
     }, [])
 
+    const lastCmd = useRef();
+
     return (
         <motion.div variants={containerVaritans} initial='hidden' whileInView='visible' viewport={{ once : true ,amount: 0.4 }} className="c_skills mb-5 py-2 px-xl-5 px-1" >
             <motion.div variants={itemVaritans} className="c_skill_headr d-flex flex-row align-items-center mb-3">
@@ -148,17 +169,18 @@ const Skills = () => {
                             const { comand } = items;
                             return (<motion.div variants={itemVaritans} className="c-items">cd:\user\u-bx31 \{comand}</motion.div>)
                         })}
+                        <div ref={lastCmd}  />
                     </motion.div>
                 </div>
 
-                <motion.div initial='hidden' whileInView={frontend.length && backend.length && devTools.length > 0 && "visible"} viewport={{ once : true}} variants={mainVaritans} className="c_skills_commands-disp text-white w-100 mt-lg-0 mt-4">
+                <motion.div initial='hidden' whileInView={frontend.length && backend.length && devTools.length > 0 && "visible"} viewport={{ once : true}} variants={mainVaritans} className="c_skills_commands-disp w-100 mt-lg-0 mt-4">
                     <motion.div variants={mainVaritans} className="c_skills_commands-disp_headrs px-lg-5 px-1">
                         <h2>Front-End</h2>
-                        <div className="row justify-content-center text-center ">{frontend.map((items, index) => {
+                        <div className="row justify-content-center text-center  ">{frontend.map((items, index) => {
                             const { img_skil } = items;
                             return (
                                 <motion.div variants={itemVaritans} className="c_skills_commands-disp_headrs_items col-auto">
-                                    <div className="c_skills_commands-disp_headrs_items_logos p-2 m-1 ">
+                                    <div className="c_skills_commands-disp_headrs_items_logos d-flex justify-content-center align-items-center p-2 m-1 ">
                                         <img src={img_skil} alt="" />
                                     </div>
                                 </motion.div>
@@ -168,7 +190,7 @@ const Skills = () => {
                         <div className="row justify-content-center text-center ">{backend.map((items, index) => {
                             const { img_skil } = items;
                             return (<motion.div variants={itemVaritans} className="c_skills_commands-disp_headrs_items col-auto">
-                                <div className="c_skills_commands-disp_headrs_items_logos p-2 m-1  ">
+                                <div className="c_skills_commands-disp_headrs_items_logos d-flex justify-content-center align-items-center p-2 m-1  ">
                                     <img src={img_skil} alt="" />
                                 </div>
                             </motion.div>)
@@ -176,8 +198,9 @@ const Skills = () => {
                         <h2>Dev-tools</h2>
                         <div className="row justify-content-center text-center ">{devTools.map((items, index) => {
                             const { img_skil } = items;
-                            return (<motion.div variants={itemVaritans} className="c_skills_commands-disp_headrs_items col-auto">
-                                <div className="c_skills_commands-disp_headrs_items_logos p-2 m-1 ">
+
+                            return (<motion.div variants={itemVaritans} className="c_skills_commands-disp_headrs_items col-auto ">
+                                <div className="c_skills_commands-disp_headrs_items_logos d-flex justify-content-center align-items-center p-2 m-1 ">
                                     <img src={img_skil} alt="" />
                                 </div>
                             </motion.div>)

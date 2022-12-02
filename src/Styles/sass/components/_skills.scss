@@ -35,7 +35,8 @@
       height: 60px;
       border-radius: 10px;
       background-color: $transparent-black;
-      position: relative;
+      position: sticky;
+      top: 0;
       &::after {
         position: absolute;
         content: "";
