@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import Hero from "./Components/Hero";
 import SideIcons from "./Components/sideIcons";
 import About from "./Components/About";
+import Skills from "./Components/Skills";
 
 const setBodyColor = (color) => {
   document.body.style.backgroundColor = `${color}`
@@ -52,7 +53,7 @@ const mainVariants = {
 
 function App() {
 
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
 
   useEffect(() => {
 
@@ -74,6 +75,7 @@ function App() {
           <Hero />
           <SideIcons />
           <About />
+          <Skills />
         </motion.main>
       </motion.div>)}
 

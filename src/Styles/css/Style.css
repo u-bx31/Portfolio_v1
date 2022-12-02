@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -186,7 +187,7 @@ body {
   top: 1px;
   z-index: -1;
 }
-.c-about_svg {
+.c-about ._svg {
   stroke: #333A72;
 }
 .c-about_desc {
@@ -213,7 +214,7 @@ body {
   .c-about_headr_text h3 {
     font-size: 1.9rem;
   }
-  .c-about_svg {
+  .c-about ._svg {
     height: 2rem;
   }
   .c-about_desc {
@@ -225,7 +226,7 @@ body {
   .c-about_headr_text h3 {
     font-size: 1.6rem;
   }
-  .c-about_svg {
+  .c-about ._svg {
     height: 1.8rem;
     width: 3rem;
   }
@@ -234,9 +235,165 @@ body {
     line-height: 1.6rem;
   }
 }
+.c_skills_header_icon ._svg {
+  stroke: #939BAE;
+}
+.c_skills_header_text h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: white;
+  margin: 0;
+  letter-spacing: -0.015em;
+}
+.c_skills_cmd-app {
+  background-color: #171717;
+  border-radius: 15px;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 44px;
+  height: 600px;
+  overflow-y: scroll;
+  /* or 200% */
+  letter-spacing: -0.015em;
+}
+.c_skills_cmd-app_top {
+  height: 60px;
+  border-radius: 10px;
+  background-color: #393939;
+  position: relative;
+}
+.c_skills_cmd-app_top::after {
+  position: absolute;
+  content: "";
+  width: 32.96px;
+  height: 39.51px;
+  border-radius: 14px;
+  background-color: #A40202;
+  right: 10px;
+  top: 10px;
+}
+.c_skills_commands-disp_headrs h2 {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: white;
+}
+.c_skills_commands-disp_headrs_items_logos {
+  background-color: #D9D9D9;
+  border-radius: 6px;
+  height: 95px;
+  width: 95px;
+  position: relative;
+}
+.c_skills_commands-disp_headrs_items_logos::after {
+  position: absolute;
+  content: "";
+  background-color: #0E0A23;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  right: -7px;
+  top: -7px;
+  border-radius: 6px;
+}
+@media (max-width: 768px) {
+  .c_skills_header_icon ._svg {
+    height: 2rem;
+  }
+  .c_skills_header_text h3 {
+    font-size: 1.9rem;
+  }
+  .c_skills_cmd-app {
+    font-size: 1.4rem;
+    line-height: 39px;
+    height: 500px;
+  }
+  .c_skills_cmd-app_top {
+    height: 50px;
+    background-color: #393939;
+    position: relative;
+  }
+  .c_skills_cmd-app_top::after {
+    position: absolute;
+    content: "";
+    width: 32.96px;
+    height: 31px;
+    border-radius: 14px;
+    background-color: #A40202;
+    right: 10px;
+    top: 10px;
+  }
+  .c_skills_commands-disp_headrs h2 {
+    font-size: 1.6rem;
+  }
+  .c_skills_commands-disp_headrs_items_logos {
+    height: 90px;
+    width: 90px;
+  }
+  .c_skills_commands-disp_headrs_items_logos img {
+    width: 60px;
+  }
+}
+@media (max-width: 500px) {
+  .c_skills_header_icon ._svg {
+    height: 1.8rem;
+  }
+  .c_skills_header_text h3 {
+    font-size: 1.7rem;
+  }
+  .c_skills_cmd-app {
+    font-size: 1.2rem;
+    line-height: 39px;
+    height: 500px;
+  }
+  .c_skills_cmd-app_top {
+    height: 50px;
+    background-color: #393939;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+  .c_skills_cmd-app_top::after {
+    position: absolute;
+    content: "";
+    width: 32.96px;
+    height: 31px;
+    border-radius: 14px;
+    background-color: #A40202;
+    right: 10px;
+    top: 10px;
+  }
+  .c_skills_commands-disp_headrs h2 {
+    font-size: 1.5rem;
+  }
+  .c_skills_commands-disp_headrs_items_logos {
+    height: 80px;
+    width: 80px;
+  }
+  .c_skills_commands-disp_headrs_items_logos img {
+    width: 50px;
+  }
+}
+@media (max-width: 280px) {
+  .c_skills_header_icon ._svg {
+    height: 1.8rem;
+  }
+  .c_skills_header_text h3 {
+    font-size: 1.7rem;
+  }
+  .c_skills_cmd-app {
+    font-size: 1rem;
+    line-height: 39px;
+    height: 500px;
+  }
+}
+
 /*Main app*/
 /*Intro section*/
 /*Navbar Section*/
 /*Hero Section*/
 /*sideIcons Section*/
-/*About Section*//*# sourceMappingURL=Style.css.map */
+/*About Section*/
+/*Skills Section*//*# sourceMappingURL=Style.css.map */

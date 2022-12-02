@@ -28,7 +28,7 @@
       }
     }
   }
-  &_svg {
+  ._svg {
     stroke: $light-blue;
   }
   &_desc {
@@ -61,7 +61,7 @@
         }
       }
     }
-    &_svg {
+    ._svg {
       height: 2rem;
     }
     &_desc {
@@ -80,7 +80,7 @@
         }
       }
     }
-    &_svg {
+    ._svg {
       height: 1.8rem;
       width: 3rem;
     }

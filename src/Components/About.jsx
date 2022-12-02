@@ -5,7 +5,7 @@ const offVariants = {
     hidden: {
         opacity: 0,
         transition: {
-            staggerChildren: 1
+            staggerChildren: .9
         }
     },
     visible: {
@@ -56,12 +56,12 @@ const About = () => {
 
                 </motion.div>
                 <motion.div variants={elementVariants2} viewport={{ once: true, amount: 0.5 }} className="c-about_desc p-lg-5 p-3">
-                    <p>
+                    <p >
                         👋 hi ! i'm Oussama Labchari. I am a Junoir web Devloper with passion and curosity on building fully responsive webSties and web applications 
                         , i realy like building web sites because it always made me learn something new, 
                         i've started learning and studying web developemnt over 2 years now , and also Still obtaining more information and knowledge 
                         about new and different Technologies that've been used recently.<br/>
-                        - if You want to know more about my experience and my education.These is My <button className='btn_link c-underLinebroder'>Resume</button>
+                        - if You want to know more about my experience and my education.<br/>These is My <button className='btn_link c-underLinebroder'>"Resume"</button>
                     </p>
                 </motion.div>
             </motion.div>
