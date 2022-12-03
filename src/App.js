@@ -7,6 +7,7 @@ import Hero from "./Components/Hero";
 import SideIcons from "./Components/sideIcons";
 import About from "./Components/About";
 import Skills from "./Components/Skills";
+import Projects from "./Components/Projects";
 
 const setBodyColor = (color) => {
   document.body.style.backgroundColor = `${color}`
@@ -76,6 +77,7 @@ function App() {
           <SideIcons />
           <About />
           <Skills />
+          <Projects />
         </motion.main>
       </motion.div>)}
 

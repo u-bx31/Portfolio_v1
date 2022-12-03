@@ -1,0 +1,256 @@
+@use "../abstracts" as *;
+.c_project {
+  //headr section
+  &_content {
+    h2 {
+      font-family: $fontFredoka;
+      font-weight: 400;
+      font-size: 2.9rem;
+      line-height: 80px;
+      color: $White;
+    }
+    p {
+      font-family: $fontFredoka;
+      font-weight: 400;
+      font-size: 1.3rem;
+      color: $light-gray;
+    }
+    &_tools {
+      h6 {
+        color: $mid-blue;
+        font-size: 1.03rem;
+      }
+    }
+    &_links {
+      svg {
+        width: 1.7rem;
+        stroke-width: 0.1rem;
+      }
+    }
+    svg:hover{
+        stroke-width: 0.15rem;
+    }
+  }
+  //image section
+  &_img {
+    &_cont {
+      width: 90%;
+      height: 20rem;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: $very-dark-blue;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        opacity: 0.7;
+        transition: 100ms ease-in-out;
+      }
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        transition: transform 100ms ease-in-out;
+      }
+
+      &_right {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: $very-dark-gray;
+        z-index: -1;
+        top: -6px;
+        left: 6px;
+        bottom: 0;
+      }
+      &_left {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: $very-dark-gray;
+        z-index: -1;
+        top: -6px;
+        left: -6px;
+        bottom: 0;
+      }
+
+      &:hover {
+        transition: all 100ms ease-in-out;
+        &::after {
+          opacity: 0;
+          transform: scale(1.04);
+        }
+        img {
+          transform: scale(1.05);
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+  /*----- width 1200px -----*/
+  @media (max-width: 1200px) {
+    &_img {
+      &_cont {
+        width: 100%;
+        height: 18rem;
+        &_right {
+          top: -4px;
+          left: 4px;
+          bottom: 0;
+        }
+        &_left {
+          top: -4px;
+          left: -4px;
+          bottom: 0;
+        }
+      }
+    }
+  }
+
+  /*----- width 850px -----*/
+  @media (max-width: 850px) {
+    //headr section
+    &_content {
+      h2 {
+        font-size: 1.9rem;
+        line-height: 60px;
+      }
+      p {
+        font-size: 1rem;
+      }
+      &_tools {
+        h6 {
+          font-size: 0.9rem;
+        }
+      }
+      &_links {
+        svg {
+          width: 1.5rem;
+        }
+      }
+    }
+    //image section
+    &_img {
+      &_cont {
+        width: 100%;
+        height: 15rem;
+      }
+    }
+    &:hover {
+      transition: all 100ms ease-in-out;
+      &::after {
+        opacity: 0;
+        transform: scale(1);
+      }
+      img {
+        transform: scale(1);
+      }
+    }
+  }
+
+  /*----- width 765px -----*/
+  @media (max-width: 765px) {
+    //headr section
+    &_content {
+      h2 {
+        font-size: 2.1rem;
+        line-height: 60px;
+      }
+    }
+    //image section
+    &_img {
+      &_cont {
+        width: 100%;
+        height: 17rem;
+
+        &_right {
+          top: 0;
+          left: 0;
+          bottom: 0;
+          background-color: transparent;
+        }
+        &_left {
+          top: 0;
+          left: 0;
+          bottom: 0;
+          background-color: transparent;
+        }
+      }
+    }
+    &:hover {
+      transition: all 100ms ease-in-out;
+      &::after {
+        opacity: 0;
+        transform: scale(1);
+      }
+      img {
+        transform: scale(1);
+      }
+    }
+  }
+  @media (max-width: 375px) {
+    //headr section
+    &_content {
+      h2 {
+        font-size: 1.5rem;
+        line-height: 50px;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+      &_tools {
+        h6 {
+          font-size: 0.8rem;
+        }
+      }
+      &_links {
+        svg {
+          width: 1.3rem;
+        }
+      }
+    }
+    //image section
+    &_img {
+      &_cont {
+        width: 100%;
+        height: 13rem;
+      }
+    }
+  }
+  @media (max-width: 280px) {
+    //headr section
+    &_content {
+      h2 {
+        font-size: 1.5rem;
+        line-height: 50px;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+      &_tools {
+        h6 {
+          font-size: 0.8rem;
+        }
+      }
+      &_links {
+        svg {
+          width: 1.3rem;
+        }
+      }
+    }
+    //image section
+    &_img {
+      &_cont {
+        width: 100%;
+        height: 11rem;
+      }
+    }
+  }
+}

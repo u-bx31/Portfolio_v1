@@ -1,24 +1,6 @@
 @use "../abstracts" as *;
 
 .c_skills {
-  // hearder of section skills
-  &_header {
-    &_icon {
-      ._svg {
-        stroke: $dark-gray;
-      }
-    }
-    &_text {
-      h3 {
-        font-family: $fontMontserrat;
-        font-weight: 700;
-        font-size: 2.5rem;
-        color: $White;
-        margin: 0;
-        letter-spacing: -0.015em;
-      }
-    }
-  }
   // cmd section
   &_cmd-app {
     background-color: $black;
@@ -29,6 +11,13 @@
     line-height: 44px;
     height: 600px;
     overflow-y: scroll;
+    &::-webkit-scrollbar{
+      width: 2px;
+      scroll-behavior: smooth;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 15px;
+    }
     /* or 200% */
     letter-spacing: -0.015em;
     &_top {
@@ -84,19 +73,6 @@
   }
 
   @media (max-width: 768px) {
-    // hearder of section skills
-    &_header {
-      &_icon {
-        ._svg {
-          height: 2rem;
-        }
-      }
-      &_text {
-        h3 {
-          font-size: 1.9rem;
-        }
-      }
-    }
     // cmd section
     &_cmd-app {
       font-size: 1.4rem;
@@ -138,19 +114,6 @@
     }
   }
   @media (max-width: 500px) {
-    // hearder of section skills
-    &_header {
-      &_icon {
-        ._svg {
-          height: 1.8rem;
-        }
-      }
-      &_text {
-        h3 {
-          font-size: 1.7rem;
-        }
-      }
-    }
     // cmd section
     &_cmd-app {
       font-size: 1.2rem;
@@ -193,19 +156,6 @@
     }
   }
   @media (max-width: 280px) {
-    // hearder of section skills
-    &_header {
-      &_icon {
-        ._svg {
-          height: 1.8rem;
-        }
-      }
-      &_text {
-        h3 {
-          font-size: 1.7rem;
-        }
-      }
-    }
     // cmd section
     &_cmd-app {
       font-size: 1rem;

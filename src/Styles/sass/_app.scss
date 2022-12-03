@@ -46,4 +46,54 @@ body {
   
 }
 
+.c_headers{
+  &_arrowIcon {
+    ._svg {
+      stroke: $dark-gray;
+    }
+  }
+  &_text {
+    h3 {
+      font-family: $fontMontserrat;
+      font-weight: 700;
+      font-size: 2.5rem;
+      color: $White;
+      margin: 0;
+    }
+  }
+
+  @media (max-width : 768px) {
+    &_arrowIcon {
+      ._svg {
+        height: 2rem;
+        width: 2.2rem;
+      }
+    }
+    &_text {
+      h3 {
+        font-size: 2rem;
+      }
+    }
+  }
+  @media (max-width : 500px) {
+    &_arrowIcon {
+      ._svg {
+        height: 1.8rem;
+      }
+    }
+    &_text {
+      h3 {
+        font-size: 1.9rem;
+      }
+    }
+  }
+  @media (max-width : 280px) {
+    &_text {
+      h3 {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
 

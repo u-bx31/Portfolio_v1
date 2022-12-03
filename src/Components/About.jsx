@@ -43,13 +43,13 @@ const elementVariants2 = {
 const About = () => {
     return (
         <>
-            <motion.div  variants={offVariants} initial="hidden" whileInView='visible' viewport={{ once: true, amount: 0.7 }}className="d-flex flex-lg-row flex-column c-about text-white py-lg-5 py-3 my-5 px-xl-5 px-1">
+            <motion.div  variants={offVariants} initial="hidden" whileInView='visible' viewport={{ once: true, amount: 0.7 }}className="d-flex flex-lg-row flex-column c-about text-white py-lg-5 py-2 my-lg-4 my-2 px-xl-5 px-1">
                 <motion.div variants={elementVariants1}  className="c-about_headr w-100">
-                    <div className="d-flex flex-row align-items-center">
-                        <div className="c-about_headr_icon me-sm-2">
+                    <div className="d-flex flex-row align-items-center c_headers">
+                        <div className="c_headers_arrowIcon me-sm-2 me-1">
                             < IconsArrows />
                         </div>
-                        <div className="c-about_headr_text">
+                        <div className="c_headers_text">
                             <h3>about_me:</h3>
                         </div>
                     </div>
