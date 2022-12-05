@@ -1,0 +1,239 @@
+@use "../abstracts" as *;
+.c-contact {
+  .custom-shape-divider-bottom-1670244021 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+  .custom-shape-divider-bottom-1670244021 svg {
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+  }
+  .custom-shape-divider-bottom-1670244021 .shape-fill {
+    fill: $li-mi-white;
+  }
+ 
+  z-index: -1;
+  &_content {
+    position: relative;
+    background-color: $li-mi-white;
+    z-index: 9999;
+    &_items {
+      &_desc {
+        font-family: $fontMontserrat;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 29px;
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.015em;
+      }
+      &_links {
+        height: 420px;
+        background-color: $dark-blue;
+        border-radius: 20px;
+        width: 100%;
+        &_icon {
+          svg {
+            width: 4rem;
+            height: 4rem;
+            stroke: $li-mi-white;
+          }
+        }
+        &_link {
+          width: 60%;
+          a {
+            font-size: 2rem;
+            font-family: $fontFredoka;
+            color: $White;
+            text-decoration: none;
+            position: relative;
+            &::before {
+              position: absolute;
+              content: "";
+              left: 0;
+              right: 0;
+              bottom: 0;
+              height: 2px;
+              background-color: white;
+              transform: scaleX(0);
+              transition: transform 300ms ease-in-out;
+            }
+            &:hover {
+              color: $White;
+              &::before {
+                transform: scaleX(1);
+              }
+            }
+          }
+        }
+        position: relative;
+        &::after {
+          position: absolute;
+          content: "";
+          height: 100%;
+          width: 100%;
+          left: -10px;
+          z-index: -2;
+          top: -10px;
+          background-color: $black;
+          border-radius: 20px;
+        }
+        &::before {
+          position: absolute;
+          content: "";
+          height: 100%;
+          width: 100%;
+          right: -10px;
+          z-index: -2;
+          bottom: -10px;
+          background-color: $White;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+  /*width 1200px*/
+  @media (max-width: 1200px) {
+    &_content {
+      &_items {
+        &_links {
+          height: 380px;
+          &_icon {
+            svg {
+              width: 4rem;
+              height: 4rem;
+              stroke: $li-mi-white;
+            }
+          }
+          &_link {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  /*width 768px*/
+  @media (max-width: 768px) {
+    &_content {
+      &_items {
+        &_desc {
+          font-size: 1.25rem;
+          line-height: 29px;
+        }
+        &_links {
+          height: 320px;
+          width: 90%;
+          margin: 0 auto;
+          &_icon {
+            svg {
+              width: 3rem;
+              height: 3rem;
+              stroke: $li-mi-white;
+            }
+          }
+          &_link {
+            width: 100%;
+            a {
+              font-family: $fontFredoka;
+              font-size: 1.4rem;
+              color: $White;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  /*width 414px*/
+  @media (max-width: 414px) {
+    .custom-shape-divider-bottom-1670244021 svg {
+      height: 80px;
+    }
+    &_content {
+      &_items {
+        &_desc {
+          font-size: 1rem;
+          line-height: 29px;
+        }
+        &_links {
+          height: 320px;
+          margin: 0 auto;
+          &_icon {
+            svg {
+              width: 2.7rem;
+              height: 2.7rem;
+              stroke: $li-mi-white;
+            }
+          }
+          &_link {
+            width: 100%;
+            a {
+              font-family: $fontFredoka;
+              font-size: 1.2rem;
+              color: $White;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 375px) {
+    &_content {
+      &_items {
+        &_desc {
+          line-height: 25px;
+        }
+        &_links {
+          height: 290px;
+          width: 90%;
+          margin: 0 auto;
+          &_icon {
+            svg {
+              width: 2.4rem;
+              height: 2.4rem;
+              stroke: $li-mi-white;
+            }
+          }
+          &_link {
+            a {
+              font-family: $fontFredoka;
+              font-size: 1.1rem;
+              color: $White;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 280px) {
+    &_content {
+      &_items {
+        &_links {
+          height: 220px;
+          width: 100%;
+          margin: 0 auto;
+          &_icon {
+            svg {
+              width: 1.5rem;
+              height: 1.5rem;
+              stroke: $li-mi-white;
+            }
+          }
+          &_link {
+            a {
+              font-family: $fontFredoka;
+              font-size: 1rem;
+              color: $White;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

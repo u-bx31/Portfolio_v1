@@ -1,5 +1,6 @@
 import IconsArrows from './icons/svgArows';
-import img1 from '../images/image1.jpeg'
+import img1 from '../images/img_lopStudio.jpeg'
+
 import GithubIcon from './icons/svgGitHub';
 import LinksIcon from './icons/svgLink';
 import { motion } from 'framer-motion';
@@ -14,7 +15,7 @@ const containerVaritans = {
         opacity: 1,
         y: 0,
         transition: {
-            duration: 2,
+            duration: 1,
             staggerChildren: .9,
         }
     }
@@ -28,8 +29,8 @@ const mainVaritans = {
         opacity: 1,
         y: 0,
         transition: {
-            duration: 2,
-            staggerChildren: 1.5,
+            duration: 1,
+            staggerChildren: 1,
         }
     }
 }
@@ -49,7 +50,7 @@ const itemVaritans = {
 
 const Projects = () => {
     return (
-        <motion.div variants={containerVaritans} initial='hidden' whileInView='visible' viewport={{ once : true ,amount: 0.4 }} className='text-white py-lg-5 py-3 px-xl-5 px-1'>
+        <motion.div variants={containerVaritans} initial='hidden' whileInView='visible' viewport={{ once : true ,amount: 0.3 }} className='container-lg text-white py-xl-5 py-3 px-xl-5 px-1'>
             <motion.div variants={itemVaritans} className="c_headers d-flex flex-row align-items-center my-lg-5 my-3">
                 <div className="c_headers_arrowIcon me-sm-2 me-1">
                     <IconsArrows />

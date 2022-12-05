@@ -4,13 +4,9 @@ import IconsArrows from './icons/svgArows'
 const offVariants = {
     hidden: {
         opacity: 0,
-        transition: {
-            staggerChildren: .9
-        }
     },
     visible: {
         opacity: 1,
-        delay : 3,
         transition: {
             staggerChildren: 1,
             when : 'beforeChildren'
@@ -25,7 +21,7 @@ const elementVariants1 = {
     visible: {
         opacity: 1,
         transition: {
-            duration: 1.5
+            duration: .8
         }
     }
 }
@@ -36,14 +32,14 @@ const elementVariants2 = {
     visible: {
         opacity: 1,
         transition: {
-            duration: 1.5
+            duration: .8
         }
     }
 }
 const About = () => {
     return (
         <>
-            <motion.div  variants={offVariants} initial="hidden" whileInView='visible' viewport={{ once: true, amount: 0.7 }}className="d-flex flex-lg-row flex-column c-about text-white py-lg-5 py-2 my-lg-4 my-2 px-xl-5 px-1">
+            <motion.div  variants={offVariants} initial="hidden" whileInView='visible' viewport={{ once: true, amount: 0.7 }}className="container-lg d-flex flex-xl-row flex-column c-about text-white py-lg-5 py-2 my-lg-4 my-2 px-xl-5 px-1">
                 <motion.div variants={elementVariants1}  className="c-about_headr w-100">
                     <div className="d-flex flex-row align-items-center c_headers">
                         <div className="c_headers_arrowIcon me-sm-2 me-1">

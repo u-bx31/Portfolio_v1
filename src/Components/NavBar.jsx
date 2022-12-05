@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { CloseButton } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
@@ -17,8 +16,8 @@ const CustomNavbar = () => {
 
     return (
         <>
-            <Navbar key={expand} bg="trasnparent" variant='dark' expand={expand} className="mb-3">
-                <Container fluid className='py-3  px-1 c-nav'>
+            <Navbar key={expand} bg="trasnparent" variant='dark' expand={expand} className="mb-3 container-lg  ">
+                <Container fluid className='py-3 px-lg-3 c-nav'>
                     <Navbar.Brand href="#" >
                         <img src={Logo} alt="" className='c-nav_logo'/>
                     </Navbar.Brand>

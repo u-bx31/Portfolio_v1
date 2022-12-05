@@ -588,6 +588,206 @@ body {
   }
 }
 
+.c-contact {
+  z-index: -1;
+  /*width 1200px*/
+  /*width 768px*/
+  /*width 414px*/
+}
+.c-contact .custom-shape-divider-bottom-1670244021 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+.c-contact .custom-shape-divider-bottom-1670244021 svg {
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+}
+.c-contact .custom-shape-divider-bottom-1670244021 .shape-fill {
+  fill: #D9D9D9;
+}
+.c-contact_content {
+  position: relative;
+  background-color: #D9D9D9;
+  z-index: 9999;
+}
+.c-contact_content_items_desc {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.015em;
+}
+.c-contact_content_items_links {
+  height: 420px;
+  background-color: #222328;
+  border-radius: 20px;
+  width: 100%;
+  position: relative;
+}
+.c-contact_content_items_links_icon svg {
+  width: 4rem;
+  height: 4rem;
+  stroke: #D9D9D9;
+}
+.c-contact_content_items_links_link {
+  width: 60%;
+}
+.c-contact_content_items_links_link a {
+  font-size: 2rem;
+  font-family: "Fredoka", sans-serif;
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+.c-contact_content_items_links_link a::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 300ms ease-in-out;
+}
+.c-contact_content_items_links_link a:hover {
+  color: white;
+}
+.c-contact_content_items_links_link a:hover::before {
+  transform: scaleX(1);
+}
+.c-contact_content_items_links::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: -10px;
+  z-index: -2;
+  top: -10px;
+  background-color: #171717;
+  border-radius: 20px;
+}
+.c-contact_content_items_links::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  right: -10px;
+  z-index: -2;
+  bottom: -10px;
+  background-color: white;
+  border-radius: 20px;
+}
+@media (max-width: 1200px) {
+  .c-contact_content_items_links {
+    height: 380px;
+  }
+  .c-contact_content_items_links_icon svg {
+    width: 4rem;
+    height: 4rem;
+    stroke: #D9D9D9;
+  }
+  .c-contact_content_items_links_link {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .c-contact_content_items_desc {
+    font-size: 1.25rem;
+    line-height: 29px;
+  }
+  .c-contact_content_items_links {
+    height: 320px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .c-contact_content_items_links_icon svg {
+    width: 3rem;
+    height: 3rem;
+    stroke: #D9D9D9;
+  }
+  .c-contact_content_items_links_link {
+    width: 100%;
+  }
+  .c-contact_content_items_links_link a {
+    font-family: "Fredoka", sans-serif;
+    font-size: 1.4rem;
+    color: white;
+    margin: 0;
+  }
+}
+@media (max-width: 414px) {
+  .c-contact .custom-shape-divider-bottom-1670244021 svg {
+    height: 80px;
+  }
+  .c-contact_content_items_desc {
+    font-size: 1rem;
+    line-height: 29px;
+  }
+  .c-contact_content_items_links {
+    height: 320px;
+    margin: 0 auto;
+  }
+  .c-contact_content_items_links_icon svg {
+    width: 2.7rem;
+    height: 2.7rem;
+    stroke: #D9D9D9;
+  }
+  .c-contact_content_items_links_link {
+    width: 100%;
+  }
+  .c-contact_content_items_links_link a {
+    font-family: "Fredoka", sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    margin: 0;
+  }
+}
+@media (max-width: 375px) {
+  .c-contact_content_items_desc {
+    line-height: 25px;
+  }
+  .c-contact_content_items_links {
+    height: 290px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .c-contact_content_items_links_icon svg {
+    width: 2.4rem;
+    height: 2.4rem;
+    stroke: #D9D9D9;
+  }
+  .c-contact_content_items_links_link a {
+    font-family: "Fredoka", sans-serif;
+    font-size: 1.1rem;
+    color: white;
+    margin: 0;
+  }
+}
+@media (max-width: 280px) {
+  .c-contact_content_items_links {
+    height: 220px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .c-contact_content_items_links_icon svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    stroke: #D9D9D9;
+  }
+  .c-contact_content_items_links_link a {
+    font-family: "Fredoka", sans-serif;
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+  }
+}
+
 /*Main app*/
 /*Intro section*/
 /*Navbar Section*/
@@ -595,4 +795,5 @@ body {
 /*sideIcons Section*/
 /*About Section*/
 /*Skills Section*/
-/*Project Section*//*# sourceMappingURL=Style.css.map */
+/*Project Section*/
+/*Contact Section*//*# sourceMappingURL=Style.css.map */

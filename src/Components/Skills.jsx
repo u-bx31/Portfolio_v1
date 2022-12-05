@@ -12,8 +12,8 @@ const containerVaritans = {
         opacity: 1,
         y: 0,
         transition: {
-            duration: 2,
-            staggerChildren: .9,
+            duration: 1,
+            staggerChildren: .7,
         }
     }
 }
@@ -27,7 +27,7 @@ const mainVaritans = {
         x: 0,
         transition: {
             duration: 2,
-            staggerChildren: 1.5,
+            staggerChildren: 1.4,
             delayChildren : .9
         }
     }
@@ -54,17 +54,15 @@ const Skills = () => {
 
 
     useEffect(() => {
-
         setFrontend(skills.filter((items) => items.specialize === 'front-end'))
         setBackend(skills.filter((items) => items.specialize === 'back-end'))
         setDevTools(skills.filter((items) => items.specialize === 'dev-tools'))
-
-    }, [])
+    },[])
 
     const lastCmd = useRef();
 
     return (
-        <motion.div variants={containerVaritans} initial='hidden' whileInView='visible' viewport={{ once : true ,amount: 0.4 }} className="c_skills mb-5 py-lg-4 py-2 px-xl-5 px-1" >
+        <motion.div variants={containerVaritans} initial='hidden' whileInView='visible' viewport={{ once : true ,amount: 0.4 }} className="c_skills container-lg mb-5 py-lg-4 py-2 px-xl-5 px-1" >
             <motion.div variants={itemVaritans} className="c_headers d-flex flex-row align-items-center mb-3">
                 <div className="c_headers_arrowIcon me-sm-2 me-1">
                     <IconsArrows />
@@ -96,7 +94,7 @@ const Skills = () => {
                 <motion.div initial='hidden' whileInView={frontend.length && backend.length && devTools.length > 0 && "visible"} viewport={{ once : true}} variants={mainVaritans} className="c_skills_commands-disp w-100 mt-lg-0 mt-4">
                     <motion.div variants={mainVaritans} className="c_skills_commands-disp_headrs px-lg-5 px-1">
                         <h2>Front-End</h2>
-                        <div className="row justify-content-center text-center  ">{frontend.map((items, index) => {
+                        <div className="row justify-content-center text-center w-100 ">{frontend.map((items, index) => {
                             const { img_skil } = items;
                             return (
                                 <motion.div variants={itemVaritans} className="c_skills_commands-disp_headrs_items col-auto">
@@ -107,7 +105,7 @@ const Skills = () => {
                             )
                         })}</div>
                         <h2>Back-End</h2>
-                        <div className="row justify-content-center text-center ">{backend.map((items, index) => {
+                        <div className="row justify-content-center text-center w-100">{backend.map((items, index) => {
                             const { img_skil } = items;
                             return (<motion.div variants={itemVaritans} className="c_skills_commands-disp_headrs_items col-auto">
                                 <div className="c_skills_commands-disp_headrs_items_logos d-flex justify-content-center align-items-center p-2 m-1  ">
@@ -116,7 +114,7 @@ const Skills = () => {
                             </motion.div>)
                         })}</div>
                         <h2>Dev-tools</h2>
-                        <div className="row justify-content-center text-center ">{devTools.map((items, index) => {
+                        <div className="row justify-content-center text-center w-100">{devTools.map((items, index) => {
                             const { img_skil } = items;
 
                             return (<motion.div variants={itemVaritans} className="c_skills_commands-disp_headrs_items col-auto ">

@@ -86,7 +86,7 @@ const waveVariants = {
 
 const Hero = () => {
     return (
-        <motion.div variants={ContainerVariants} initial='hidden' animate='visible'>
+        <motion.div variants={ContainerVariants} initial='hidden' animate='visible' className="container-lg  ">
             <motion.div variants={heroVariants} className="d-flex c-hero justify-content-between flex-lg-row-reverse text-lg-start text-center flex-column align-items-center pt-lg-5 mt-lg-2 pt-4 ">
                 <motion.div variants={imgVariants} className="w-100 text-center">
                     <img src={Img2} alt="" className="c-hero_img1" />
