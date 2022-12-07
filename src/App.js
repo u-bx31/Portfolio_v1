@@ -4,7 +4,6 @@ import './Styles/css/Style.css'
 import CustomNavbar from "./Components/NavBar";
 import { useEffect, useState } from "react";
 import Hero from "./Components/Hero";
-import SideIcons from "./Components/sideIcons";
 import About from "./Components/About";
 import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
@@ -22,8 +21,8 @@ const content = {
     opacity: 1,
     transition: {
       duration: 2,
-      staggerChildren : 1
-      
+      staggerChildren: 1
+
     },
   },
 };
@@ -44,15 +43,14 @@ const itemsVariants = {
 function App() {
 
   const [loading, setLoading] = useState(true)
+ 
 
   useEffect(() => {
 
     setTimeout(() => {
       setLoading(false)
     }, 4000);
-
     setBodyColor('#222328');
-    window.scrollTo(0,0)
   }, [])
 
   return (
@@ -64,7 +62,6 @@ function App() {
           <motion.header variants={itemsVariants}><CustomNavbar /></motion.header>
           <motion.main variants={itemsVariants}>
             <Hero />
-            <SideIcons />
             <About />
             <Skills />
             <Projects />
@@ -72,7 +69,7 @@ function App() {
           </motion.main>
           <motion.footer variants={itemsVariants}><Footer /></motion.footer>
         </motion.div>
-        )}
+      )}
     </>
 
   );

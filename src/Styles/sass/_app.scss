@@ -25,16 +25,17 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
-  .btn_link{
+  .btn_link {
     background-color: transparent;
     border: none;
-    color: $White ;
+    color: $White;
     position: relative;
-    &:hover{
+    cursor: pointer;
+    &:hover {
       color: $dark-gray;
     }
-
   }
+  
 }
 
 body {
@@ -42,11 +43,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-width: 280px;
-
   
 }
 
-.c_headers{
+.c_headers {
   &_arrowIcon {
     ._svg {
       stroke: $dark-gray;
@@ -62,7 +62,7 @@ body {
     }
   }
 
-  @media (max-width : 768px) {
+  @media (max-width: 768px) {
     &_arrowIcon {
       ._svg {
         height: 2rem;
@@ -75,7 +75,7 @@ body {
       }
     }
   }
-  @media (max-width : 500px) {
+  @media (max-width: 500px) {
     &_arrowIcon {
       ._svg {
         height: 1.8rem;
@@ -87,7 +87,7 @@ body {
       }
     }
   }
-  @media (max-width : 280px) {
+  @media (max-width: 280px) {
     &_text {
       h3 {
         font-size: 1.8rem;
@@ -95,5 +95,3 @@ body {
     }
   }
 }
-
-

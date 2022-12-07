@@ -37,12 +37,22 @@
     }
     &_btns {
       &_hire {
+        text-decoration: none;
         &:hover {
           svg {
             fill:$dark-gray;
           }
         }
       }
+    }
+  }
+}
+.c-arrow{
+  svg{
+    cursor: pointer;
+    transition: transform 50ms ease-in-out;
+    &:hover{
+      transform: scale(1.1);
     }
   }
 }

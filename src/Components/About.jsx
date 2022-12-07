@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import IconsArrows from './icons/svgArows'
+import LocationIcon from './icons/svgLocation';
 
 const offVariants = {
     hidden: {
@@ -8,8 +9,7 @@ const offVariants = {
     visible: {
         opacity: 1,
         transition: {
-            staggerChildren: 1,
-            when : 'beforeChildren'
+            staggerChildren: .9
         }
     }
 }
@@ -37,10 +37,14 @@ const elementVariants2 = {
     }
 }
 const About = () => {
+    const handleOpen = () => {
+        window.open('https://drive.google.com/file/d/1AfNbZcl9o9I_EQSFuZ7ucMuBbdDMcYCb/view?usp=share_link', '_blank', 'noopener,noreferrer');
+
+    }
     return (
-        <>
-            <motion.div  variants={offVariants} initial="hidden" whileInView='visible' viewport={{ once: true, amount: 0.7 }}className="container-lg d-flex flex-xl-row flex-column c-about text-white py-lg-5 py-2 my-lg-4 my-2 px-xl-5 px-1">
-                <motion.div variants={elementVariants1}  className="c-about_headr w-100">
+        <section id='about'>
+            <motion.div variants={offVariants} initial="hidden" whileInView='visible' viewport={{ once: true, amount: 0.7 }} className="container-lg d-flex flex-xl-row flex-column c-about text-white py-lg-5 py-2 my-lg-4 my-2 px-xl-5 px-1">
+                <motion.div variants={elementVariants1} className="c-about_headr w-100">
                     <div className="d-flex flex-row align-items-center c_headers">
                         <div className="c_headers_arrowIcon me-sm-2 me-1">
                             < IconsArrows />
@@ -53,15 +57,18 @@ const About = () => {
                 </motion.div>
                 <motion.div variants={elementVariants2} viewport={{ once: true, amount: 0.5 }} className="c-about_desc p-lg-5 p-3">
                     <p >
-                        👋 hi ! i'm Oussama Labchari. I am a Junoir web Devloper with passion and curosity on building fully responsive webSties and web applications 
-                        , i realy like building web sites because it always made me learn something new, 
-                        i've started learning and studying web developemnt over 2 years now , and also Still obtaining more information and knowledge 
-                        about new and different Technologies that've been used recently.<br/>
-                        - if You want to know more about my experience and my education.<br/>These is My <button className='btn_link c-underLinebroder'>"Resume"</button>
+                        👋 hi ! i'm Oussama Labchari. I am a Junoir web Devloper with passion and curosity on building fully responsive webSties and web applications
+                        , i realy like building web sites because it always made me learn something new,
+                        i've started learning and studying web developemnt over 2 years now , and also Still obtaining more information and knowledge
+                        about new and different Technologies that've been used recently.<br />
+                        - <LocationIcon />  Tetouan , Morocco ;<br />
+
+                        - if You want to know more about my experience and my education. These is My <button className='btn_link c-underLinebroder' onClick={()=>handleOpen()}>"Resume"</button>
                     </p>
+
                 </motion.div>
             </motion.div>
-        </>
+        </section>
     );
 }
 

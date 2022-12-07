@@ -5,6 +5,7 @@ import Img2 from '../images/undraw_programming.svg'
 import IconArow from './icons/svgLeftArrow'
 import IconCode from './icons/svgCode'
 import ArrowDown from './icons/svgArrowScroll'
+import ScrollToSection from "./ScrollToSection";
 
 const ContainerVariants = {
     hidden: {
@@ -110,14 +111,16 @@ const Hero = () => {
                             speed={1}
                         />
                     </motion.div>
-                    <motion.div className="c-hero_headrs_btns  d-flex ms-lg-4 justify-content-lg-start justify-content-center ">
-                        <button className="c-hero_headrs_btns_prj btn btn-outline-light px-sm-5 px-1 py-3"><IconCode/> My Proejcts</button>
-                        <button className="c-hero_headrs_btns_hire btn_link px-4">Hire me <IconArow /></button>
+                    <motion.div className="c-hero_headrs_btns  d-flex ms-lg-4 justify-content-lg-start justify-content-center align-items-center ">
+                        <ScrollToSection target='project' className="c-hero_headrs_btns_prj btn btn-outline-light px-sm-5 px-1 py-3"><IconCode /> My Proejcts</ScrollToSection>
+                        <ScrollToSection target='contact' className="c-hero_headrs_btns_hire btn_link px-4">Hire me <IconArow /></ScrollToSection>
                     </motion.div>
                 </motion.div>
             </motion.div>
             <div className="w-100 text-center p-0 m-0 c-arrow pt-lg-5 pt-4">
-                <ArrowDown />
+                <ScrollToSection target='about' >
+                    <ArrowDown />
+                </ScrollToSection>
             </div>
         </motion.div>
 

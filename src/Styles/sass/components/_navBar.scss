@@ -1,9 +1,16 @@
 @use "../abstracts" as *;
 
+header{
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  backdrop-filter: brightness(0) saturate(100%) invert(9%) sepia(16%) saturate(487%) hue-rotate(193deg) brightness(98%) contrast(89%);
+}
 .c-nav {
   &_logo{
     width: 90%;
   }
+
   &_links {
     h4 {
       margin: 0;
@@ -22,6 +29,7 @@
 
 @media (max-width: 991px) {
   .offcanvas {
+    z-index: 999;
     .offcanvas-header{
         background-color: $black;
     }

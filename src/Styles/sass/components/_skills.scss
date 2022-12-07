@@ -82,7 +82,7 @@
       &_top {
         height: 50px;
         background-color: $transparent-black;
-        position: relative;
+        
         &::after {
           position: absolute;
           content: "";
@@ -123,8 +123,6 @@
       &_top {
         height: 50px;
         background-color: $transparent-black;
-        position: sticky;
-        top: 0;
         &::after {
           position: absolute;
           content: "";
