@@ -98,7 +98,6 @@ const Hero = () => {
                             <motion.h3 variants={waveVariants}>👋</motion.h3>
                             <h3 >Hello! I'm Oussama</h3>
                         </div>
-
                     </motion.div>
                     <motion.div variants={titlesVariants2} className="c-hero_headrs_profesion ms-lg-4">
                         <TypeAnimation
