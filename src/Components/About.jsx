@@ -18,7 +18,7 @@ const AboutVariants = {
 
 const About = () => {
     const handleOpen = () => {
-        window.open('https://drive.google.com/file/d/1AfNbZcl9o9I_EQSFuZ7ucMuBbdDMcYCb/view?usp=share_link', '_blank', 'noopener,noreferrer');
+        window.open('https://drive.google.com/file/d/1gU_NhLsR67yN71UJGGnPZKf_zNldUGde/view?usp=share_link', '_blank', 'noopener,noreferrer');
     }
     return (
         <section id='about'>

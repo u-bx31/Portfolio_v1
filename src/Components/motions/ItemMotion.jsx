@@ -7,7 +7,7 @@ const itemVaritans = {
     visible: {
         opacity: 1,
         transition: {
-            duration: .9
+            duration: .8
         }
     }
 }

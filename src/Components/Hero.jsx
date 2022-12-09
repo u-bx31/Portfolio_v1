@@ -87,42 +87,43 @@ const waveVariants = {
 
 const Hero = () => {
     return (
-        <motion.div variants={ContainerVariants} initial='hidden' animate='visible' className="container-lg  ">
-            <motion.div variants={heroVariants} className="d-flex c-hero justify-content-between flex-lg-row-reverse text-lg-start text-center flex-column align-items-center pt-lg-5 mt-lg-2 pt-4 ">
-                <motion.div variants={imgVariants} className="w-100 text-center">
-                    <img src={Img2} alt="" className="c-hero_img1" />
+        <section id='home'>
+            <motion.div variants={ContainerVariants} initial='hidden' animate='visible' className="container-lg  ">
+                <motion.div variants={heroVariants} className="d-flex c-hero justify-content-between flex-lg-row-reverse text-lg-start text-center flex-column align-items-center pt-lg-5 mt-lg-2 pt-4 ">
+                    <motion.div variants={imgVariants} className="w-100 text-center">
+                        <img src={Img2} alt="" className="c-hero_img1" />
+                    </motion.div>
+                    <motion.div variants={HeadrsVariants} className="c-hero_headrs w-100 m-xl-5  ">
+                        <motion.div variants={titlesVariants} className="c-hero_headrs_gretings text-center rounded-5 mb-4 mx-auto mx-lg-0">
+                            <div className="d-flex justify-content-center m-0 p-sm-0 align-items-center  ">
+                                <motion.h3 variants={waveVariants}>👋</motion.h3>
+                                <h3 >Hello! I'm Oussama</h3>
+                            </div>
+                        </motion.div>
+                        <motion.div variants={titlesVariants2} className="c-hero_headrs_profesion ms-lg-4">
+                            <TypeAnimation
+                                sequence={[
+                                    2000,
+                                    "I'm a Web Developer", // Types 'One'
+                                ]}
+                                wrapper="h1"
+                                cursor={true}
+                                speed={1}
+                            />
+                        </motion.div>
+                        <motion.div className="c-hero_headrs_btns  d-flex ms-lg-4 justify-content-lg-start justify-content-center align-items-center ">
+                            <ScrollToSection target='project' className="c-hero_headrs_btns_prj btn btn-outline-light px-sm-5 px-1 py-3"><IconCode /> My Proejcts</ScrollToSection>
+                            <ScrollToSection target='contact' className="c-hero_headrs_btns_hire btn_link px-4">Hire me <IconArow /></ScrollToSection>
+                        </motion.div>
+                    </motion.div>
                 </motion.div>
-                <motion.div variants={HeadrsVariants} className="c-hero_headrs w-100 m-xl-5  ">
-                    <motion.div variants={titlesVariants} className="c-hero_headrs_gretings text-center rounded-5 mb-4 mx-auto mx-lg-0">
-                        <div className="d-flex justify-content-center m-0 p-sm-0 align-items-center  ">
-                            <motion.h3 variants={waveVariants}>👋</motion.h3>
-                            <h3 >Hello! I'm Oussama</h3>
-                        </div>
-                    </motion.div>
-                    <motion.div variants={titlesVariants2} className="c-hero_headrs_profesion ms-lg-4">
-                        <TypeAnimation
-                            sequence={[
-                                2000,
-                                "I'm a Web Developer", // Types 'One'
-                            ]}
-                            wrapper="h1"
-                            cursor={true}
-                            speed={1}
-                        />
-                    </motion.div>
-                    <motion.div className="c-hero_headrs_btns  d-flex ms-lg-4 justify-content-lg-start justify-content-center align-items-center ">
-                        <ScrollToSection target='project' className="c-hero_headrs_btns_prj btn btn-outline-light px-sm-5 px-1 py-3"><IconCode /> My Proejcts</ScrollToSection>
-                        <ScrollToSection target='contact' className="c-hero_headrs_btns_hire btn_link px-4">Hire me <IconArow /></ScrollToSection>
-                    </motion.div>
-                </motion.div>
+                <div className="w-100 text-center p-0 m-0 c-arrow pt-lg-5 pt-4">
+                    <ScrollToSection target='about' >
+                        <ArrowDown />
+                    </ScrollToSection>
+                </div>
             </motion.div>
-            <div className="w-100 text-center p-0 m-0 c-arrow pt-lg-5 pt-4">
-                <ScrollToSection target='about' >
-                    <ArrowDown />
-                </ScrollToSection>
-            </div>
-        </motion.div>
-
+        </section>
     );
 }
 

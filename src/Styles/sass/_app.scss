@@ -37,13 +37,14 @@
   }
   
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: $fontMontserrat;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-width: 280px;
-  
 }
 
 .c_headers {
