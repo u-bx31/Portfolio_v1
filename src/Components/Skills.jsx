@@ -38,7 +38,7 @@ const Skills = () => {
                     </div>
                 </ItemMotion>
                 <MainMotion condition={frontend.length && backend.length && devTools.length > 0}>
-                    <div className="d-flex justify-content-between flex-lg-row flex-column">
+                    <div className="d-flex justify-content-between flex-xl-row flex-column">
                         <div className="c_skills_cmd-app w-100 d-lg-block d-none">
                             <div className="c_skills_cmd-app_top"></div>
                             <MainMotion condition={frontend.length && backend.length && devTools.length > 0} className="c_skills_cmd-app_comands text-white p-3">

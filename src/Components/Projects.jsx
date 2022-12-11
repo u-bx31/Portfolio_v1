@@ -37,7 +37,7 @@ const Projects = () => {
                             <MainMotion condition={true} className={`d-flex  ${position === 'left' ? 'flex-md-row-reverse' : position === 'right' ? 'flex-md-row' : ''} flex-column-reverse align-items-center py-lg-2 py-3`}>
                                 <div className="c_project_content w-100 px-md-4 px-2 py-md-0 py-2">
                                     <h2>{title}</h2>
-                                    <p >this website was a chalenge from FrontEnd mentor i've done it to practice more at react </p>
+                                    <p >{description} </p>
                                     <div className="c_project_content_tools row  text-center">
                                         {tools_use}
                                     </div>
@@ -55,7 +55,7 @@ const Projects = () => {
                             </MainMotion>
                         )
                     })}
-                    <h3 className='mx-auto c_project_soon pt-lg-3'>More Project Will be Added Soon ... </h3>
+                    <h3 className='mx-auto c_project_soon pt-lg-3'>More Projects Will be Added Soon ... </h3>
                 </ItemMotion>
             </ContainerMotion>
         </section>

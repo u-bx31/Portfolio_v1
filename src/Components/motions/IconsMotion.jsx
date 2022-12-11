@@ -13,8 +13,8 @@ const IconsMotion = ({ children, className, condition }) => {
             y: 0,
             transition: {
                 duration: 1,
-                staggerChildren: 1.3,
-                delayChildren: 1.5
+                staggerChildren: 1.4,
+                delayChildren: 1.7
             }
         }
     }
