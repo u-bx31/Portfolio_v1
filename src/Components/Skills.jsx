@@ -10,6 +10,7 @@ import ItemMotion2 from "./motions/ItemMotion2";
 
 
 const Skills = () => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const skills = [...skillsData]
     const [frontend, setFrontend] = useState([])
     const [backend, setBackend] = useState([])
@@ -20,7 +21,7 @@ const Skills = () => {
         setFrontend(skills.filter((items) => items.specialize === 'front-end'))
         setBackend(skills.filter((items) => items.specialize === 'back-end'))
         setDevTools(skills.filter((items) => items.specialize === 'dev-tools'))
-    }, [])
+    },[skills])
 
     const lastCmd = useRef();
 
