@@ -58,37 +58,46 @@ function App() {
 
   return (
     <div>
-      <Helmet>
-        <meta name="theme-color" content="#000000" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charset="utf-8" />
-        <title>Oussama Labchari</title>
-        <meta name="og:title" content="Oussama Labchari" />
-        <meta
-          name="description"
-          content="Junoir web Devloper with passion  on building fully responsive webSties and web applications"
-        />
-        <meta name="keywords" content="u-bx31, Oussama Labchari, u-bx31 portfolio, oussamaLabchari portfolio, webDeveloper, junior webDeveloper, webAppDeveloper" />
-        <meta name="language" content="English" />
 
-        <meta name="author" content="Oussama Labchari" />
-        <meta name="image" content={`https://u-bx31.netlify.app${img_banner}`} />
-
-        {/* <!-- Open Graph / Facebook --> */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://u-bx31.netlify.app/" />
-        <meta property="og:title" content="Oussama Labchari" />
-        <meta
-          property="og:description"
-          content="Junoir web Devloper with passion  on building fully responsive webSties and web applications"
-        />
-        <meta property="og:image" content={`https://u-bx31.netlify.app${img_banner}`} />
-
-      </Helmet>
       {loading ? <Intro /> : (
         <motion.div initial="hidden"
           animate="visible"
           variants={content} className="App">
+          <Helmet>
+
+
+            <title>Oussama Labchari</title>
+            <meta name="og:title" content="Oussama Labchari" />
+            <meta
+              name="description"
+              content="Junoir web Devloper with passion  on building fully responsive webSties and web applications"
+            />
+            <meta name="keywords" content="u-bx31, Oussama Labchari, u-bx31 portfolio, oussamaLabchari portfolio, webDeveloper, junior webDeveloper, webAppDeveloper" />
+            <meta name="language" content="English" />
+
+            <meta name="author" content="Oussama Labchari" />
+            <meta name="image" content={`https://u-bx31.netlify.app${img_banner}`} />
+
+            {/* <!-- Open Graph / Facebook --> */}
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content="https://u-bx31.netlify.app/" />
+            <meta property="og:title" content="Oussama Labchari" />
+            <meta
+              property="og:description"
+              content="Junoir web Devloper with passion  on building fully responsive webSties and web applications"
+            />
+            <meta property="og:image" content={`https://u-bx31.netlify.app${img_banner}`} />
+
+            {/* <!-- Twitter --> */}
+            <meta property="twitter:card" content="summary_large_image" />
+            <meta property="twitter:url" content="https://u-bx31.netlify.app/" />
+            <meta property="twitter:title" content="Oussama Labchari" />
+            <meta
+              property="twitter:description"
+              content="Junoir web Devloper with passion  on building fully responsive webSties and web applications"
+            />
+            <meta property="twitter:image" content={`https://u-bx31.netlify.app${img_banner}`} />
+          </Helmet>
           <motion.header variants={itemsVariants}><CustomNavbar /></motion.header>
           <motion.main variants={itemsVariants}>
             <Hero />
