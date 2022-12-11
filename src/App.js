@@ -59,20 +59,6 @@ function App() {
   return (
     <>
       <Helmet>
-
-        <meta name="keywords"
-          content="u-bx31, Oussama Labchari, u-bx31 portfolio, oussamaLabchari portfolio, webDeveloper, junior webDeveloper, webAppDeveloper" />
-        <meta name="language" content="English" />
-        <meta name="author" content="Oussama Labchari" />
-
-        {/* <!-- Primary Meta Tags --> */}
-        <title>Oussama Labchari</title>
-        <meta name="title" content="Oussama Labchari" />
-        <meta
-          name="description"
-          content="Junoir web Devloper with passion  on building fully responsive webSties and web applications"
-        />
-
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://u-bx31.netlify.app/" />
