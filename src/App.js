@@ -71,7 +71,7 @@ function App() {
           content="Junoir web Devloper with passion on building fully responsive webSties and web applications"
           data-react-helmet="true"
         />
-        <meta property="og:image" content={`${img_banner}`} data-react-helmet="true" />
+        <meta property="og:image" content={`https://u-bx31.netlify.app${img_banner}`} data-react-helmet="true" />
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" data-react-helmet="true"/>
@@ -82,7 +82,7 @@ function App() {
           content="Junoir web Devloper with passion on building fully responsive webSties and web applications"
           data-react-helmet="true"
         />
-        <meta property="twitter:image" content={`${img_banner}`} data-react-helmet="true"/>
+        <meta property="twitter:image" content={`https://u-bx31.netlify.app${img_banner}`} data-react-helmet="true"/>
       </Helmet>
       {loading ? <Intro /> : (
         <motion.div initial="hidden"
