@@ -68,7 +68,7 @@ function App() {
         <meta name="language" content="English" />
 
         <meta name="author" content="Oussama Labchari" />
-        <meta name="image" content={`https://u-bx31.netlify.app/${img_banner}`} />
+        <meta name="image" content={`https://u-bx31.netlify.app${img_banner}`} />
 
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
@@ -78,7 +78,7 @@ function App() {
           property="og:description"
           content="Junoir web Devloper with passion  on building fully responsive webSties and web applications"
         />
-        <meta property="og:image" content={`https://u-bx31.netlify.app/${img_banner}`} />
+        <meta property="og:image" content={`https://u-bx31.netlify.app${img_banner}`} />
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" />
@@ -88,7 +88,7 @@ function App() {
           property="twitter:description"
           content="Junoir web Devloper with passion  on building fully responsive webSties and web applications"
         />
-        <meta property="twitter:image" content={`https://u-bx31.netlify.app/${img_banner}`} />
+        <meta property="twitter:image" content={`https://u-bx31.netlify.app${img_banner}`} />
       </Helmet>
       {loading ? <Intro /> : (
         <motion.div initial="hidden"
