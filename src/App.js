@@ -70,11 +70,11 @@ function App() {
         />
         <meta property="og:image" content={img_banner} data-react-helmet="true" />
 
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://u-bx31.netlify.app/" />
-        <meta property="twitter:title" content="Oussama Labchari" />
-        <meta property="twitter:description" content="Junoir web Devloper with passion  on building fully responsive webSties and web applications" />
-        <meta property="twitter:image" content={img_banner}></meta>
+        <meta property="twitter:card" content="summary_large_image"data-react-helmet="true" />
+        <meta property="twitter:url" content="https://u-bx31.netlify.app/"data-react-helmet="true" />
+        <meta property="twitter:title" content="Oussama Labchari"data-react-helmet="true" />
+        <meta property="twitter:description" content="Junoir web Devloper with passion  on building fully responsive webSties and web applications" data-react-helmet="true"/>
+        <meta property="twitter:image" content={img_banner} data-react-helmet="true"></meta>
       </Helmet>
       {loading ? <Intro /> : (
         <motion.div initial="hidden"
