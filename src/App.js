@@ -57,7 +57,7 @@ function App() {
   }, [])
 
   return (
-    <>
+    <div>
       <Helmet>
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
@@ -79,8 +79,6 @@ function App() {
         />
         <meta property="twitter:image" content={img_banner} />
       </Helmet>
-
-
       {loading ? <Intro /> : (
         <motion.div initial="hidden"
           animate="visible"
@@ -96,7 +94,7 @@ function App() {
           <motion.footer variants={itemsVariants}><Footer /></motion.footer>
         </motion.div>
       )}
-    </>
+    </div>
 
   );
 }
