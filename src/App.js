@@ -57,29 +57,29 @@ function App() {
   }, [])
 
   return (
-    <>
+    <div>
       <Helmet>
         {/* <!-- HTML Meta Tags --> */}
         <title>sdfdsf</title>
-        <meta name="description" content="asdsadasd" />
+        <meta name="description" content="asdsadasd" data-react-helmet="true" />
 
         {/* <!-- Google / Search Engine Tags --> */}
-        <meta itemprop="name" content="sdfdsf" />
-        <meta itemprop="description" content="asdsadasd" />
-        <meta itemprop="image" content="https://u-bx31.netlify.app/static/media/img_banner.f6b07343abbbd6eff1d5.png" />
+        <meta itemprop="name" content="sdfdsf" data-react-helmet="true" />
+        <meta itemprop="description" content="asdsadasd" data-react-helmet="true" />
+        <meta itemprop="image" content="https://u-bx31.netlify.app/static/media/img_banner.f6b07343abbbd6eff1d5.png" data-react-helmet="true" />
 
         {/* <!-- Facebook Meta Tags --> */}
-        <meta property="og:url" content="https://u-bx31.netlify.app/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="sdfdsf" />
+        <meta property="og:url" content="https://u-bx31.netlify.app/" data-react-helmet="true" />
+        <meta property="og:type" content="website" data-react-helmet="true" />
+        <meta property="og:title" content="sdfdsf" data-react-helmet="true" />
         <meta property="og:description" content="asdsadasd" />
-        <meta property="og:image" content="https://u-bx31.netlify.app/static/media/img_banner.f6b07343abbbd6eff1d5.png" />
+        <meta property="og:image" content="https://u-bx31.netlify.app/static/media/img_banner.f6b07343abbbd6eff1d5.png" data-react-helmet="true" />
 
         {/* <!-- Twitter Meta Tags --> */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="sdfdsf" />
-        <meta name="twitter:description" content="asdsadasd" />
-        <meta name="twitter:image" content="https://u-bx31.netlify.app/static/media/img_banner.f6b07343abbbd6eff1d5.png" />
+        <meta name="twitter:card" content="summary_large_image" data-react-helmet="true" />
+        <meta name="twitter:title" content="sdfdsf" data-react-helmet="true" />
+        <meta name="twitter:description" content="asdsadasd" data-react-helmet="true" />
+        <meta name="twitter:image" content="https://u-bx31.netlify.app/static/media/img_banner.f6b07343abbbd6eff1d5.png" data-react-helmet="true" />
       </Helmet>
       {loading ? <Intro /> : (
         <motion.div initial="hidden"
@@ -96,7 +96,7 @@ function App() {
           <motion.footer variants={itemsVariants}><Footer /></motion.footer>
         </motion.div>
       )}
-    </>
+    </div>
 
   );
 }
