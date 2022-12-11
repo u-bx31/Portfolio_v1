@@ -1,6 +1,5 @@
 import Intro from "./Components/intro";
 import { motion } from 'framer-motion'
-import img_banner from './images/img_banner.png'
 import './Styles/css/Style.css'
 import CustomNavbar from "./Components/NavBar";
 import { useEffect, useState } from "react";
