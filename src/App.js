@@ -68,7 +68,7 @@ function App() {
         <meta property="og:title" content="Oussama Labchari" data-react-helmet="true"/>
         <meta
           property="og:description"
-          content="Junoir web Devloper with passion  on building fully responsive webSties and web applications"
+          content="Junoir web Devloper with passion on building fully responsive webSties and web applications"
           data-react-helmet="true"
         />
         <meta property="og:image" content={`${img_banner}`} data-react-helmet="true" />
@@ -79,7 +79,7 @@ function App() {
         <meta property="twitter:title" content="Oussama Labchari" data-react-helmet="true"/>
         <meta
           property="twitter:description"
-          content="Junoir web Devloper with passion  on building fully responsive webSties and web applications"
+          content="Junoir web Devloper with passion on building fully responsive webSties and web applications"
           data-react-helmet="true"
         />
         <meta property="twitter:image" content={`${img_banner}`} data-react-helmet="true"/>
