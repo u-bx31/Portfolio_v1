@@ -1,4 +1,5 @@
-import {  motion } from "framer-motion";
+import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 
 const logoVariants = {
     hidden: {
@@ -17,7 +18,7 @@ const blackBox = {
     },
     visible: {
         y: '-100vh',
-        transition: { delay : 3,duration: .9, ease: "easeInOut" }
+        transition: { delay: 3, duration: .9, ease: "easeInOut" }
     },
 };
 
@@ -27,6 +28,29 @@ const Intro = () => {
 
     return (
         <>
+            <Helmet>
+                {/* <!-- HTML Meta Tags --> */}
+                <title>sdfdsf</title>
+                <meta name="description" content="asdsadasd" data-react-helmet="true" />
+
+                {/* <!-- Google / Search Engine Tags --> */}
+                <meta itemprop="name" content="sdfdsf" data-react-helmet="true" />
+                <meta itemprop="description" content="asdsadasd" data-react-helmet="true" />
+                <meta itemprop="image" content="https://u-bx31.netlify.app/static/media/img_banner.f6b07343abbbd6eff1d5.png" data-react-helmet="true" />
+
+                {/* <!-- Facebook Meta Tags --> */}
+                <meta property="og:url" content="https://u-bx31.netlify.app/" data-react-helmet="true" />
+                <meta property="og:type" content="website" data-react-helmet="true" />
+                <meta property="og:title" content="sdfdsf" data-react-helmet="true" />
+                <meta property="og:description" content="asdsadasd" />
+                <meta property="og:image" content="https://u-bx31.netlify.app/static/media/img_banner.f6b07343abbbd6eff1d5.png" data-react-helmet="true" />
+
+                {/* <!-- Twitter Meta Tags --> */}
+                <meta name="twitter:card" content="summary_large_image" data-react-helmet="true" />
+                <meta name="twitter:title" content="sdfdsf" data-react-helmet="true" />
+                <meta name="twitter:description" content="asdsadasd" data-react-helmet="true" />
+                <meta name="twitter:image" content="https://u-bx31.netlify.app/static/media/img_banner.f6b07343abbbd6eff1d5.png" data-react-helmet="true" />
+            </Helmet>
             <motion.div variants={blackBox} initial='hidden' animate='visible' className="w-100 d-flex flex-column justify-content-center align-items-center c-intro min-vh-100 text-center">
                 <div className="svg">
                     <svg width="129" height="28" viewBox="0 0 129 28" fill="none" xmlns="http://www.w3.org/2000/svg">
