@@ -1,6 +1,7 @@
 import Intro from "./Components/intro";
 import { motion } from 'framer-motion'
 import './Styles/css/Style.css'
+import img_banner from './images/img_banner.png'
 import CustomNavbar from "./Components/NavBar";
 import { useEffect, useState } from "react";
 import Hero from "./Components/Hero";
@@ -59,7 +60,21 @@ function App() {
     <>
       <Helmet>
         {/* <!-- Open Graph / Facebook --> */}
-        
+        <meta property="og:type" content="website" data-react-helmet="true" />
+        <meta property="og:url" content="https://u-bx31.netlify.app/" data-react-helmet="true" />
+        <meta property="og:title" content="Oussama Labchari" data-react-helmet="true" />
+        <meta
+          property="og:description"
+          content="Junoir web Devloper with passion on building fully responsive webSties and web applications"
+          data-react-helmet="true"
+        />
+        <meta property="og:image" content={img_banner} data-react-helmet="true" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://u-bx31.netlify.app/" />
+        <meta property="twitter:title" content="Oussama Labchari" />
+        <meta property="twitter:description" content="Junoir web Devloper with passion  on building fully responsive webSties and web applications" />
+        <meta property="twitter:image" content={img_banner}></meta>
       </Helmet>
       {loading ? <Intro /> : (
         <motion.div initial="hidden"
