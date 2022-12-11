@@ -59,8 +59,11 @@ function App() {
   return (
     <div>
       <Helmet>
+        <meta name="theme-color" content="#000000" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" />
         <title>Oussama Labchari</title>
-        <meta name="title" content="Oussama Labchari" />
+        <meta name="og:title" content="Oussama Labchari" />
         <meta
           name="description"
           content="Junoir web Devloper with passion  on building fully responsive webSties and web applications"
@@ -81,15 +84,6 @@ function App() {
         />
         <meta property="og:image" content={`https://u-bx31.netlify.app${img_banner}`} />
 
-        {/* <!-- Twitter --> */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://u-bx31.netlify.app/" />
-        <meta property="twitter:title" content="Oussama Labchari" />
-        <meta
-          property="twitter:description"
-          content="Junoir web Devloper with passion  on building fully responsive webSties and web applications"
-        />
-        <meta property="twitter:image" content={`https://u-bx31.netlify.app${img_banner}`} />
       </Helmet>
       {loading ? <Intro /> : (
         <motion.div initial="hidden"
