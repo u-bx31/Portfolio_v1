@@ -59,6 +59,7 @@ function App() {
   return (
     <div>
       <Helmet>
+        <title>Oussama Labchari</title>
         <meta name="title" content="Oussama Labchari" />
         <meta
           name="description"
