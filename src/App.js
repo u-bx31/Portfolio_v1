@@ -59,22 +59,27 @@ function App() {
   return (
     <>
       <Helmet>
-        {/* <!-- Open Graph / Facebook --> */}
-        <meta property="og:type" content="website" data-react-helmet="true" />
-        <meta property="og:url" content="https://u-bx31.netlify.app/" data-react-helmet="true" />
-        <meta property="og:title" content="Oussama Labchari" data-react-helmet="true" />
-        <meta
-          property="og:description"
-          content="Junoir web Devloper with passion on building fully responsive webSties and web applications"
-          data-react-helmet="true"
-        />
-        <meta property="og:image" content={img_banner} data-react-helmet="true" />
+        {/* <!-- HTML Meta Tags --> */}
+        <title>sdfdsf</title>
+        <meta name="description" content="asdsadasd" />
 
-        <meta property="twitter:card" content="summary_large_image"data-react-helmet="true" />
-        <meta property="twitter:url" content="https://u-bx31.netlify.app/"data-react-helmet="true" />
-        <meta property="twitter:title" content="Oussama Labchari"data-react-helmet="true" />
-        <meta property="twitter:description" content="Junoir web Devloper with passion  on building fully responsive webSties and web applications" data-react-helmet="true"/>
-        <meta property="twitter:image" content={img_banner} data-react-helmet="true"></meta>
+        {/* <!-- Google / Search Engine Tags --> */}
+        <meta itemprop="name" content="sdfdsf" />
+        <meta itemprop="description" content="asdsadasd" />
+        <meta itemprop="image" content="https://u-bx31.netlify.app/static/media/img_banner.f6b07343abbbd6eff1d5.png" />
+
+        {/* <!-- Facebook Meta Tags --> */}
+        <meta property="og:url" content="https://u-bx31.netlify.app/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="sdfdsf" />
+        <meta property="og:description" content="asdsadasd" />
+        <meta property="og:image" content="https://u-bx31.netlify.app/static/media/img_banner.f6b07343abbbd6eff1d5.png" />
+
+        {/* <!-- Twitter Meta Tags --> */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="sdfdsf" />
+        <meta name="twitter:description" content="asdsadasd" />
+        <meta name="twitter:image" content="https://u-bx31.netlify.app/static/media/img_banner.f6b07343abbbd6eff1d5.png" />
       </Helmet>
       {loading ? <Intro /> : (
         <motion.div initial="hidden"
