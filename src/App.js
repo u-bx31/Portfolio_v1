@@ -43,14 +43,14 @@ const itemsVariants = {
 
 function App() {
 
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
 
 
   useEffect(() => {
 
     setTimeout(() => {
       setLoading(false)
-    }, 4000);
+    }, 3000);
     setBodyColor('#222328');
   }, [])
 

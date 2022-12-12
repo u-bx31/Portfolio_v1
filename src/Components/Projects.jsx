@@ -23,7 +23,7 @@ const Projects = () => {
                     </div>
                 </ItemMotion>
                 <ItemMotion className="c_project d-flex flex-column justify-content-center px-lg-3">
-                    {Data.map((project) => {
+                    {Data.map((project,index) => {
                         const { title, description, urls, img_url, tools,position } = project;
                         const {github,link} = urls;
                         const tools_use = tools.map((tools) => {
@@ -34,7 +34,7 @@ const Projects = () => {
                             )
                         })
                         return (
-                            <MainMotion condition={true} className={`d-flex  ${position === 'left' ? 'flex-md-row-reverse' : position === 'right' ? 'flex-md-row' : ''} flex-column-reverse align-items-center py-lg-2 py-3`}>
+                            <MainMotion condition={true} className={`d-flex  ${position === 'left' ? 'flex-md-row-reverse' : position === 'right' ? 'flex-md-row' : ''} flex-column-reverse align-items-center py-lg-2 py-3`} key={index}>
                                 <div className="c_project_content w-100 px-md-4 px-2 py-md-0 py-2">
                                     <h2>{title}</h2>
                                     <p >{description} </p>
@@ -42,14 +42,14 @@ const Projects = () => {
                                         {tools_use}
                                     </div>
                                     <div className="c_project_content_links d-flex">
-                                        <a href={github} className='px-2 ps-0 text-white'><GithubIcon /></a>
-                                        <a href={link} className='px-2  text-white'><LinksIcon /></a>
+                                        <a href={github} aria-label="github_Link" className='px-2 ps-0 text-white'><GithubIcon /></a>
+                                        <a href={link} aria-label="url_Link" className='px-2  text-white'><LinksIcon /></a>
                                     </div>
                                 </div>
                                 <div className="c_project_img w-100">
                                     <div className="c_project_img_cont">
                                         <div className={`c_project_img_cont_${position}`}></div>
-                                        <img src={img_url} alt="" />
+                                        <img src={img_url} loading='lazy' alt="" />
                                     </div>
                                 </div>
                             </MainMotion>

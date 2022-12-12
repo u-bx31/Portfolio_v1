@@ -79,7 +79,7 @@ const Skills = () => {
                                     return (
                                         <ItemMotion className="c_skills_commands-disp_headrs_items col-auto" key={index}>
                                             <div className="c_skills_commands-disp_headrs_items_logos d-flex justify-content-center align-items-center p-2 m-1 ">
-                                                <img src={img_skil} alt="" />
+                                                <img src={img_skil} loading='lazy' alt="" />
                                             </div>
                                         </ItemMotion>
                                     )
@@ -90,7 +90,7 @@ const Skills = () => {
                                     return (
                                         <ItemMotion condition={frontend.length && backend.length && devTools.length > 0} className="c_skills_commands-disp_headrs_items col-auto" key={index}>
                                             <div className="c_skills_commands-disp_headrs_items_logos d-flex justify-content-center align-items-center p-2 m-1 ">
-                                                <img src={img_skil} alt="" />
+                                                <img src={img_skil} loading='lazy' alt="" />
                                             </div>
                                         </ItemMotion>
                                     )
@@ -101,7 +101,7 @@ const Skills = () => {
                                     return (
                                         <ItemMotion condition={frontend.length && backend.length && devTools.length > 0} className="c_skills_commands-disp_headrs_items col-auto" key={index}>
                                             <div className="c_skills_commands-disp_headrs_items_logos d-flex justify-content-center align-items-center p-2 m-1 ">
-                                                <img src={img_skil} alt="" />
+                                                <img src={img_skil} loading='lazy' alt="" />
                                             </div>
                                         </ItemMotion>
                                     )

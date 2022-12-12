@@ -27,10 +27,10 @@ const CustomNavbar = () => {
         <Navbar key={expand} bg="trasnparent" variant='dark' expand={expand} className="mb-lg-3 mb-0 container-lg c-nav p-0">
             <Container fluid className='py-lg-3 px-lg-3 px-0'>
                 <div className='c-nav_top d-flex justify-content-between w-100 align-items-center ps-lg-0 ps-3'>
-                    <Navbar.Brand href="#" >
+                    <Navbar.Brand href="#" aria-label="home_Link">
                         <img src={Logo} alt="" className='c-nav_logo' />
                     </Navbar.Brand>
-                    <button className='btn d-lg-none d-block border-0 bg-transparent c-nav_toggler p-0' onClick={() => setOpen(!open)} >
+                    <button className='btn d-lg-none d-block border-0 bg-transparent c-nav_toggler p-0' aria-label="menu" onClick={() => setOpen(!open)} >
                         <div className={`${open && 'active'} `}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="70" viewBox="0 0 200 200">
                                 <g stroke-width="6.5" strokeLinecap="round">

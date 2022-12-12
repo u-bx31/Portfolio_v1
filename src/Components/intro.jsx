@@ -6,7 +6,7 @@ const logoVariants = {
     },
     visible: {
         opacity: 1, pathLength: 1, fillOpacity: [0, 0, .5, 1],
-        transition: { duration: 3, ease: "easeInOut" }
+        transition: { duration: 2, ease: "easeInOut" }
     }
 }
 const blackBox = {
@@ -17,16 +17,16 @@ const blackBox = {
     },
     visible: {
         y: '-100vh',
-        transition: { delay : 3,duration: .9, ease: "easeInOut" }
+        transition: { delay : 2,duration: .9, ease: "easeInOut" }
     },
 };
 
 
-const Intro = () => {
+const Intro = ({clasname}) => {
 
 
     return (
-        <>
+        <main className={clasname}>
             <motion.div variants={blackBox} initial='hidden' animate='visible' className="w-100 d-flex flex-column justify-content-center align-items-center c-intro min-vh-100 text-center">
                 <div className="svg">
                     <svg width="129" height="28" viewBox="0 0 129 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -34,7 +34,7 @@ const Intro = () => {
                     </svg>
                 </div>
             </motion.div>
-        </>
+        </main>
     );
 }
 
