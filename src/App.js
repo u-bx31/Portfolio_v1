@@ -1,7 +1,6 @@
 import Intro from "./Components/intro";
 import { motion } from 'framer-motion'
 import './Styles/css/Style.css'
-import img_banner from './images/img_banner.png'
 import CustomNavbar from "./Components/NavBar";
 import { useEffect, useState } from "react";
 import Hero from "./Components/Hero";
@@ -10,7 +9,6 @@ import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Fotter";
-import { Helmet } from "react-helmet";
 
 
 const setBodyColor = (color) => {
@@ -58,11 +56,6 @@ function App() {
 
   return (
     <di>
-      <Helmet>
-        <meta property="og:image" content={`https://u-bx31.netlify.app${img_banner}`} />
-        <meta property="og:url" content="https://u-bx31.netlify.app/"/>
-        <meta property="twitter:url" content="https://u-bx31.netlify.app/"/>
-      </Helmet>
       {loading ? <Intro /> : (
         <motion.div initial="hidden"
           animate="visible"
