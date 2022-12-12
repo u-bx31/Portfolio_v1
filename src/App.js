@@ -9,7 +9,6 @@ import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Fotter";
-import { Helmet } from "react-helmet";
 
 
 const setBodyColor = (color) => {
@@ -57,22 +56,6 @@ function App() {
 
   return (
     <>
-      <Helmet>
-        {/* open graph meta tags */}
-        <meta property="og:image" content={`https://github.com/u-bx31/Portfolio_v1/blob/main/src/images/img_banner.png?raw=true`} />
-        <meta property="og:image:alt" content="This image contains a screen shots of website" />
-        <meta property="og:url" content="https://u-bx31.netlify.app/" />
-        <meta property="og:title" content="Oussama Labchari | Web Developer" />
-        <meta property="og:description" content="Hi! I am oussama Labchari a junior web developer and this my first portfolio" />
-        <meta property="og:type" content="website" />
-
-        {/* twitter meta tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Oussama Labchari | Web Developer" />
-        <meta name="twitter:description" content="Hi! I am oussama Labchari a junior web developer and this my first portfolio" />
-        <meta name="twitter:image" content={`https://github.com/u-bx31/Portfolio_v1/blob/main/src/images/img_banner.png?raw=true`} />
-        <meta name="twitter:image:alt" content="This image contains a screen shots of website"/>
-      </Helmet>
       {loading ? <Intro /> : (
         <motion.div initial="hidden"
           animate="visible"

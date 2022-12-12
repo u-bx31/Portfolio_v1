@@ -13,7 +13,7 @@ const CustomNavbar = () => {
     let expand = 'lg';
     const [open, setOpen] = useState(false);
     const handleOpen = () => {
-        window.open('https://drive.google.com/file/d/1gU_NhLsR67yN71UJGGnPZKf_zNldUGde/view?usp=share_link', '_blank', 'noopener,noreferrer');
+        window.open('https://drive.google.com/file/d/1CZdamK0t3BiPNcG_GkQ7V4mQi57FSl9l/view?usp=share_link', '_blank', 'noopener,noreferrer');
     }
     useEffect(() => {
         var Events = Scroll.Events;
