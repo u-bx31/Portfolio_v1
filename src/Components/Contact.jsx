@@ -44,12 +44,12 @@ const Contact = () => {
                                     </div>
                                 </ItemMotion>
                                 <ItemMotion className='px-sm-3 px-1 pt-lg-0 pt-2 pb-lg-0 pb-4'>
-                                    I’m intrested on web devolpement i built custom website and also desktop apps.
-                                    if my Work interested you dont hesitate to contact me ✌😉
+                                    I’m interested in web development I built custom websites and also windows form applications.<br />
+                                    these are my accounts that you can contact me on.
                                 </ItemMotion>
                             </motion.div>
                             <div className="c-contact_content_items_links d-flex flex-column p-2 justify-content-center ">
-                                <motion.div variants={customVariants}  className='d-flex flex-column'>
+                                <motion.div variants={customVariants} className='d-flex flex-column'>
                                     <ItemMotion className="d-flex justify-content-center align-items-center pb-3">
                                         <div className="c-contact_content_items_links_icon  mx-2"><LinkdinIcon /></div>
                                         <div className="c-contact_content_items_links_link"><a href="https://www.linkedin.com/">/oussama-labchari</a></div>
