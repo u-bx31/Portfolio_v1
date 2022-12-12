@@ -59,7 +59,7 @@ function App() {
   return (
     <di>
       <Helmet>
-        <meta property="og:image" content={img_banner} />
+        <meta property="og:image" content={'https://u-bx31.netlify.app' + {img_banner}} />
         <meta property="og:url" content="https://u-bx31.netlify.app/"/>
         <meta property="twitter:url" content="https://u-bx31.netlify.app/"/>
       </Helmet>
