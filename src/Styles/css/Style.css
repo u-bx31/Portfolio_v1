@@ -157,7 +157,7 @@ header {
   color: white;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.1rem;
+  font-size: 1rem;
   letter-spacing: 0.135em;
 }
 .c-nav_links h4:hover {
@@ -393,6 +393,15 @@ header {
   background-color: #A40202;
   right: 10px;
   top: 10px;
+}
+.c_skills_img {
+  width: 50%;
+}
+@media (max-width: 1199px) {
+  .c_skills_img {
+    width: 60%;
+    margin: 2rem;
+  }
 }
 .c_skills_commands-disp_headrs h2 {
   font-family: "Fredoka", sans-serif;

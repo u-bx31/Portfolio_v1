@@ -1,5 +1,5 @@
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import IconsArrows from './icons/svgArows';
 import skillsData from "./data/skillsData";
 import ItemMotion from "./motions/ItemMotion";
@@ -7,6 +7,7 @@ import ContainerMotion from "./motions/ContainerMotion";
 import MainMotion from "./motions/MainMotion";
 import IconsMotion from "./motions/IconsMotion";
 import ItemMotion2 from "./motions/ItemMotion2";
+import img_test from "../images/img_code_thinking.svg";
 
 
 const Skills = () => {
@@ -20,10 +21,9 @@ const Skills = () => {
         setFrontend(skills.filter((items) => items.specialize === 'front-end'))
         setBackend(skills.filter((items) => items.specialize === 'back-end'))
         setDevTools(skills.filter((items) => items.specialize === 'dev-tools'))
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[])
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
 
-    const lastCmd = useRef();
 
     return (
         <section id='skills'>
@@ -40,7 +40,7 @@ const Skills = () => {
                 </ItemMotion>
                 <MainMotion condition={frontend.length && backend.length && devTools.length > 0}>
                     <div className="d-flex justify-content-between flex-xl-row flex-column">
-                        <div className="c_skills_cmd-app w-100 d-lg-block d-none">
+                        {/* <div className="c_skills_cmd-app w-100 d-lg-block d-none">
                             <div className="c_skills_cmd-app_top"></div>
                             <MainMotion condition={frontend.length && backend.length && devTools.length > 0} className="c_skills_cmd-app_comands text-white p-3">
                                 {frontend.map((items, index) => {
@@ -69,7 +69,9 @@ const Skills = () => {
                                 })}
                                 <div ref={lastCmd} />
                             </MainMotion>
-                        </div>
+                        </div> */}
+                        <img src={img_test} className='c_skills_img d-lg-block d-none mx-auto' alt="" />
+
 
                         <div className="c_skills_commands-disp w-100 mt-lg-0 mt-4">
                             <IconsMotion condition={frontend.length && backend.length && devTools.length > 0} className="c_skills_commands-disp_headrs px-lg-5 px-1">

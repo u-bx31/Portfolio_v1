@@ -43,7 +43,7 @@ const itemsVariants = {
 
 function App() {
 
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
 
 
   useEffect(() => {

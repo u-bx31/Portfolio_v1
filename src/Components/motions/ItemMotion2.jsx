@@ -9,7 +9,7 @@ const itemVaritans2 = {
         opacity: 1,
         transition: {
             duration: .9,
-            staggerChildren : 1
+            staggerChildren : .9
             
         }
     }

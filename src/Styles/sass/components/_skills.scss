@@ -38,6 +38,13 @@
       }
     }
   }
+  &_img{
+    width: 50%;
+    @media (max-width:1199px) {
+      width: 60%;
+      margin: 2rem;
+    }
+  }
   // display icons section
   &_commands-disp {
     &_headrs {

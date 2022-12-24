@@ -11,10 +11,14 @@ const IconsMotion = ({ children, className, condition }) => {
         visible: {
             opacity: 1,
             y: 0,
+            // transition: {
+            //     duration: 1,
+            //     staggerChildren: 1.4,
+            //     delayChildren: 1.7
+            // }
             transition: {
                 duration: 1,
-                staggerChildren: 1.4,
-                delayChildren: 1.7
+                staggerChildren: 1,
             }
         }
     }
