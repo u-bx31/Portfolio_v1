@@ -52,7 +52,7 @@ const Contact = () => {
                                 <motion.div variants={customVariants} className='d-flex flex-column'>
                                     <ItemMotion className="d-flex justify-content-center align-items-center pb-3">
                                         <div className="c-contact_content_items_links_icon  mx-2"><LinkdinIcon /></div>
-                                        <div className="c-contact_content_items_links_link"><a href="https://www.linkedin.com/">/oussama-labchari</a></div>
+                                        <div className="c-contact_content_items_links_link"><a href="https://www.linkedin.com/in/oussama-labchari/">/oussama-labchari</a></div>
                                     </ItemMotion>
                                     <ItemMotion className="d-flex justify-content-center align-items-center pb-3">
                                         <div className="c-contact_content_items_links_icon  mx-2"><TwitterIcon /></div>
