@@ -21,9 +21,8 @@ const content = {
   visible: {
     opacity: 1,
     transition: {
-      duration: 2,
-      staggerChildren: 1
-
+      duration: .9,
+      staggerChildren: .8
     },
   },
 };
@@ -36,7 +35,7 @@ const itemsVariants = {
   visible: {
     opacity: 1,
     transition: {
-      duration: 1,
+      duration: .6,
     }
   }
 }

@@ -58,7 +58,7 @@ const titlesVariants = {
     visible: {
         opacity: 1,
         transition: {
-            duration: 1.5,
+            duration: .4,
         }
     }
 }
@@ -69,7 +69,7 @@ const titlesVariants2 = {
     visible: {
         opacity: 1,
         transition: {
-            duration: 1.5,
+            duration: .4,
         }
     }
 }

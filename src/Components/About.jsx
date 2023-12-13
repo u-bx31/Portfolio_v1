@@ -10,7 +10,7 @@ const AboutVariants = {
     visible: {
         opacity: 1,
         transition: {
-            staggerChildren: .7
+            staggerChildren: .3
         }
     }
 }

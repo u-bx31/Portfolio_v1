@@ -8,9 +8,9 @@ const mainVaritans = {
         opacity: 1,
         y: 0,
         transition: {
-            duration: 1,
-            staggerChildren: 1.3,
-            delayChildren: 1.5
+            duration: .8,
+            staggerChildren: 1.1,
+            delayChildren: 1.3
         }
     }
 }

@@ -16,7 +16,7 @@ const customVariants = {
         opacity: 1,
         y: 0,
         transition: {
-            duration: 1,
+            duration: .5,
             staggerChildren: 1,
         }
     }
@@ -53,10 +53,6 @@ const Contact = () => {
                                     <ItemMotion className="d-flex justify-content-center align-items-center pb-3">
                                         <div className="c-contact_content_items_links_icon  mx-2"><LinkdinIcon /></div>
                                         <div className="c-contact_content_items_links_link"><a href="https://www.linkedin.com/in/oussama-labchari/">/oussama-labchari</a></div>
-                                    </ItemMotion>
-                                    <ItemMotion className="d-flex justify-content-center align-items-center pb-3">
-                                        <div className="c-contact_content_items_links_icon  mx-2"><TwitterIcon /></div>
-                                        <div className="c-contact_content_items_links_link"><a href="https://twitter.com/bx31_o">/@bx31_o</a></div>
                                     </ItemMotion>
                                     <ItemMotion className="d-flex justify-content-center align-items-center pb-3">
                                         <div className="c-contact_content_items_links_icon  mx-2"><GmailIcon /></div>
