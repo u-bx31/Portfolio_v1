@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import IconsArrows from './icons/svgArows';
 import GmailIcon from './icons/svgGmail';
 import LinkdinIcon from './icons/svgLinkdin';
-import TwitterIcon from './icons/svgTwitter';
 import ContainerMotion from './motions/ContainerMotion';
 import ItemMotion from './motions/ItemMotion';
 

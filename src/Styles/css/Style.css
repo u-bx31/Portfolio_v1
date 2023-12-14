@@ -45,6 +45,10 @@ body {
   min-width: 280px;
 }
 
+.not-allowed{
+  cursor: not-allowed !important;
+}
+
 .c_headers_arrowIcon ._svg {
   stroke: #939BAE;
 }

@@ -1,3 +1,5 @@
+import img_cc from '../../images/img_connectCrew.jpeg';
+import img_rps from '../../images/img_rps.jpeg';
 import img_ip from '../../images/img_ipTracker.jpeg';
 import img_easyBank from '../../images/img_easyBank.jpeg';
 import img_loopStudio from '../../images/img_lopStudio.jpeg';
@@ -5,6 +7,30 @@ import img_tipCalc from '../../images/img_tipCalc.jpeg';
 import img_moviesLand from '../../images/img_moviesLand.jpeg';
 
 const ProjectsData = [
+    {
+        title : 'ConnectCrew Web Application',
+        description : 'Connect Crew is a social networking app that facilitates meaningful connections among users who share common interests and goals. Similar to Threads, the app provides a platform for users to engage in conversations, share updates, and collaborate on projects within specialized communities called "Crews."',
+        tools : ['TypeScript','NextJs14','Tailwindcss','Shadcn/ui','Mongo Database','Uploadthing','Clerk'],
+        urls : {
+            github:'https://github.com/u-bx31/connect-crew',
+            link : 'connect-crew.vercel.app'
+        },
+        img_url :img_cc,
+        position : 'left'
+
+    },
+    {
+        title : 'Rock, Paper, Scissor game',
+        description : 'Advanced challenge on Frontend Mentor, Where i used only reactJs to built this game',
+        tools : ['ReactJs','HTML','Scss','Bootstrap'],
+        urls : {
+            github:'https://github.com/u-bx31/rps_game',
+            link : 'https://rock-paper-scissor-31.netlify.app/'
+        },
+        img_url :img_rps,
+        position : 'right'
+
+    },
     {
         title : 'Ip Adresse Tracker',
         description : 'Intermediate challenge on Frontend Mentor,in this project i use Two separate APIs together to create an IP Address Tracking app',

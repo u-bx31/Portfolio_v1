@@ -11,6 +11,13 @@ import MainMotion from './motions/MainMotion';
 
 const Projects = () => {
     const Data = [...ProjectsData];
+
+    const CustomLink = ({ href, children, className }) => {
+        if (href === '#') {
+            return <div className={`${className} not-allowed`}>{children}</div>
+        }
+        return <a href={href} className={className}>{children}</a>
+    }
     return (
         <section id='project'>
             <ContainerMotion amount={0.2} className='container-lg text-white py-xl-4 py-3 px-xl-5 px-1'>
@@ -23,9 +30,9 @@ const Projects = () => {
                     </div>
                 </ItemMotion>
                 <ItemMotion className="c_project d-flex flex-column justify-content-center px-lg-3">
-                    {Data.map((project,index) => {
-                        const { title, description, urls, img_url, tools,position } = project;
-                        const {github,link} = urls;
+                    {Data.map((project, index) => {
+                        const { title, description, urls, img_url, tools, position } = project;
+                        const { github, link } = urls;
                         const tools_use = tools.map((tools) => {
                             return (
                                 <div className="col-auto">
@@ -37,21 +44,21 @@ const Projects = () => {
                             <MainMotion condition={true} className={`d-flex  ${position === 'left' ? 'flex-md-row-reverse' : position === 'right' ? 'flex-md-row' : ''} flex-column-reverse align-items-center py-lg-2 py-3`} key={index}>
                                 <div className="c_project_content w-100 px-md-4 px-2 py-md-0 py-2">
                                     <h2>{title}</h2>
-                                    <p >{description} </p>
+                                    <p class="overflow-hidden">{description} </p>
                                     <div className="c_project_content_tools row  text-center">
                                         {tools_use}
                                     </div>
                                     <div className="c_project_content_links d-flex">
-                                        <a href={github} aria-label="github_Link" className='px-2 ps-0 text-white'><GithubIcon /></a>
-                                        <a href={link} aria-label="url_Link" className='px-2  text-white'><LinksIcon /></a>
+                                        <CustomLink href={github} aria-label="github_Link" className='px-2 ps-0 text-white'><GithubIcon /></CustomLink>
+                                        <CustomLink href={link} aria-label="url_Link" className='px-2  text-white'><LinksIcon /></CustomLink>
                                     </div>
                                 </div>
-                                <div className="c_project_img w-100">
+                                <CustomLink className={'c_project_img w-100'} href={link}>
                                     <div className="c_project_img_cont">
                                         <div className={`c_project_img_cont_${position}`}></div>
                                         <img src={img_url} loading='lazy' alt="" />
                                     </div>
-                                </div>
+                                </CustomLink>
                             </MainMotion>
                         )
                     })}
