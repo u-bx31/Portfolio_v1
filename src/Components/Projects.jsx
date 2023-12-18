@@ -62,7 +62,6 @@ const Projects = () => {
                             </MainMotion>
                         )
                     })}
-                    <h3 className='mx-auto c_project_soon pt-lg-3'>More Projects Will be Added Soon ... </h3>
                 </ItemMotion>
             </ContainerMotion>
         </section>
