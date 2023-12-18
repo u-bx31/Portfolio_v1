@@ -31,7 +31,7 @@ const Projects = () => {
                 </ItemMotion>
                 <ItemMotion className="c_project d-flex flex-column justify-content-center px-lg-3">
                     {Data.map((project, index) => {
-                        const { title, description, urls, img_url, tools, position } = project;
+                        const { title, description, urls, img_url, tools, position,isCompleted } = project;
                         const { github, link } = urls;
                         const tools_use = tools.map((tools) => {
                             return (
@@ -44,7 +44,8 @@ const Projects = () => {
                             <MainMotion condition={true} className={`d-flex  ${position === 'left' ? 'flex-md-row-reverse' : position === 'right' ? 'flex-md-row' : ''} flex-column-reverse align-items-center py-lg-2 py-3`} key={index}>
                                 <div className="c_project_content w-100 px-md-4 px-2 py-md-0 py-2">
                                     <h2>{title}</h2>
-                                    <p class="overflow-hidden">{description} </p>
+                                    {!isCompleted && <h5 class="badge bg-warning text-dark">InProgress</h5>}
+                                    <p class="overflow-hidden">{description.length >= 300 ? `${description.slice(0, 150)}...` : description}</p>
                                     <div className="c_project_content_tools row  text-center">
                                         {tools_use}
                                     </div>
