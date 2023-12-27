@@ -35,8 +35,8 @@ const About = () => {
                 </ItemMotion>
                 <ItemMotion className="c-about_desc p-lg-5 p-3">
                     <p >
-                        👋 Hi! I'm Oussama Labchari. I am a junior web developer with a passion and interest in building fully responsive websites and web applications. I really enjoy building websites because it always makes me learn something new. I started learning and studying web development over 2 years now. 
-                        and also Still obtaining more knowledge about new and different technologies that have been used recently<br />
+                        👋 Hi! I'm Oussama Labchari. I am a junior web developer with a passion and interest in building fully responsive websites and web applications. I really enjoy building websites because it always makes me learn something new. I started learning web development in 2021. 
+                        each time i work on project i'm obtaining more knowledge about new and different technologies that have been used lately<br />
                         - <LocationIcon />  Tetouan , Morocco ;<br />
                         - if You want to know more about my experience and my education. These is My <button className='btn_link c-underLinebroder' onClick={() => handleOpen()}>"Resume"</button>
                     </p>

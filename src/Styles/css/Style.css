@@ -1,3 +1,4 @@
+/*Main app*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
@@ -45,7 +46,7 @@ body {
   min-width: 280px;
 }
 
-.not-allowed{
+.not-allowed {
   cursor: not-allowed !important;
 }
 
@@ -82,14 +83,15 @@ body {
   }
 }
 
+/*Intro section*/
 .c-intro {
   background-color: #171717;
   z-index: 999;
   position: fixed;
 }
 
+/*Navbar Section*/
 header {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -188,6 +190,7 @@ header {
             backdrop-filter: brightness(100%) contrast(2%);
   }
 }
+/*Hero Section*/
 .c-hero_img1 {
   width: 100%;
 }
@@ -272,6 +275,7 @@ header {
     -webkit-text-stroke-width: 1px;
   }
 }
+/*sideIcons Section*/
 .side_up_icons {
   list-style: none;
   width: 30px;
@@ -293,6 +297,7 @@ header {
   padding: 4px 0;
 }
 
+/*About Section*/
 .c-about_headr .c_headers_text h3 {
   color: #939BAE;
   position: relative;
@@ -361,42 +366,9 @@ header {
     margin-bottom: 0px;
   }
 }
-.c_skills_cmd-app {
-  background-color: #171717;
-  border-radius: 15px;
-  font-family: "Fredoka", sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 44px;
-  height: 600px;
-  overflow-y: scroll;
-  /* or 200% */
-  letter-spacing: -0.015em;
-}
-.c_skills_cmd-app::-webkit-scrollbar {
-  width: 2px;
-  scroll-behavior: smooth;
-}
-.c_skills_cmd-app::-webkit-scrollbar-thumb {
-  border-radius: 15px;
-}
-.c_skills_cmd-app_top {
-  height: 60px;
-  border-radius: 10px;
-  background-color: #393939;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-.c_skills_cmd-app_top::after {
-  position: absolute;
-  content: "";
-  width: 32.96px;
-  height: 39.51px;
-  border-radius: 14px;
-  background-color: #A40202;
-  right: 10px;
-  top: 10px;
+/*Skills Section*/
+.c_skills_cards {
+  width: 75%;
 }
 .c_skills_img {
   width: 50%;
@@ -432,25 +404,6 @@ header {
   border-radius: 6px;
 }
 @media (max-width: 768px) {
-  .c_skills_cmd-app {
-    font-size: 1.4rem;
-    line-height: 39px;
-    height: 500px;
-  }
-  .c_skills_cmd-app_top {
-    height: 50px;
-    background-color: #393939;
-  }
-  .c_skills_cmd-app_top::after {
-    position: absolute;
-    content: "";
-    width: 32.96px;
-    height: 31px;
-    border-radius: 14px;
-    background-color: #A40202;
-    right: 10px;
-    top: 10px;
-  }
   .c_skills_commands-disp_headrs h2 {
     font-size: 1.6rem;
   }
@@ -463,6 +416,9 @@ header {
   }
 }
 @media (max-width: 500px) {
+  .c_skills_cards {
+    width: 100%;
+  }
   .c_skills_cmd-app {
     font-size: 1.2rem;
     line-height: 39px;
@@ -501,6 +457,7 @@ header {
   }
 }
 
+/*Project Section*/
 .c_project {
   overflow-x: hidden;
   /*----- width 1200px -----*/
@@ -716,6 +673,7 @@ header {
   }
 }
 
+/*Contact Section*/
 .c-contact {
   z-index: -1;
   /*width 1200px*/
@@ -914,14 +872,4 @@ header {
     color: white;
     margin: 0;
   }
-}
-
-/*Main app*/
-/*Intro section*/
-/*Navbar Section*/
-/*Hero Section*/
-/*sideIcons Section*/
-/*About Section*/
-/*Skills Section*/
-/*Project Section*/
-/*Contact Section*//*# sourceMappingURL=Style.css.map */
+}/*# sourceMappingURL=Style.css.map */

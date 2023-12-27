@@ -1,42 +1,8 @@
 @use "../abstracts" as *;
 
 .c_skills {
-  // cmd section
-  &_cmd-app {
-    background-color: $black;
-    border-radius: 15px ;
-    font-family: $fontFredoka;
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 44px;
-    height: 600px;
-    overflow-y: scroll;
-    &::-webkit-scrollbar{
-      width: 2px;
-      scroll-behavior: smooth;
-    }
-    &::-webkit-scrollbar-thumb {
-      border-radius: 15px;
-    }
-    /* or 200% */
-    letter-spacing: -0.015em;
-    &_top {
-      height: 60px;
-      border-radius: 10px;
-      background-color: $transparent-black;
-      position: sticky;
-      top: 0;
-      &::after {
-        position: absolute;
-        content: "";
-        width: 32.96px;
-        height: 39.51px;
-        border-radius: 14px;
-        background-color: $red;
-        right: 10px;
-        top: 10px;
-      }
-    }
+  &_cards{
+    width: 75%;
   }
   &_img{
     width: 50%;
@@ -80,28 +46,7 @@
   }
 
   @media (max-width: 768px) {
-    // cmd section
-    &_cmd-app {
-      font-size: 1.4rem;
-      line-height: 39px;
-      height: 500px;
 
-      &_top {
-        height: 50px;
-        background-color: $transparent-black;
-        
-        &::after {
-          position: absolute;
-          content: "";
-          width: 32.96px;
-          height: 31px;
-          border-radius: 14px;
-          background-color: $red;
-          right: 10px;
-          top: 10px;
-        }
-      }
-    }
     // display icons section
     &_commands-disp {
       &_headrs {
@@ -121,6 +66,9 @@
     }
   }
   @media (max-width: 500px) {
+    &_cards{
+      width: 100%;
+    }
     // cmd section
     &_cmd-app {
       font-size: 1.2rem;
