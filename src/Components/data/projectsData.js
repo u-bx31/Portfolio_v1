@@ -82,7 +82,7 @@ const ProjectsData = [
     },
     {
         title : 'Movies web application',
-        description : 'This was a class project to learn about Full stack developing web site using ASP.NET, C# and SQl with 2 sections one for the users and other one for the admin that has CRUD operations for creating and managing persistent data elements that in SQL Server. it not responsive yet but will be added soon',
+        description : 'This was a class project to learn about Full stack developing web site using ASP.NET, C# and SQl. suddenly it`s not live but i have a screens shots in github of each page in the app and how it`s looks like , i will try to make new version of it using new techs . this app had 2 sections one for the users and other one for the admin that has CRUD operations for creating and managing persistent data elements that in SQL Server. it not responsive yet but will be added soon',
         tools : ['HTML','Scss','VisualStudio','C#','ASP.Net','SQLDataBase'],
         urls : {
             github:'https://github.com/u-bx31/MoviesWeb',
