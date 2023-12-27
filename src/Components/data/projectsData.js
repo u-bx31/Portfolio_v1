@@ -13,7 +13,7 @@ const ProjectsData = [
         tools : ['TypeScript','NextJs14','Tailwindcss','Shadcn/ui','Mongo Database','Uploadthing','Clerk'],
         urls : {
             github:'https://github.com/u-bx31/connect-crew',
-            link : 'connect-crew.vercel.app'
+            link : 'https://connect-crew.vercel.app'
         },
         img_url :img_cc,
         position : 'left',
