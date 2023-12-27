@@ -1,5 +1,5 @@
 import { Circle } from "rc-progress";
-import { motion, useAnimation, useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
 const SkillsCard = ({condition}) => {
