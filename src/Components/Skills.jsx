@@ -1,11 +1,10 @@
 
-import { motion, useInView, useScroll } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import IconsArrows from './icons/svgArows';
 import skillsData from "./data/skillsData";
 import ItemMotion from "./motions/ItemMotion";
 import ContainerMotion from "./motions/ContainerMotion";
-import { useEffect, useRef, useState } from "react";
-import SkillsCard from "./cards/skills";
+import {useRef } from "react";
 
 
 const Skills = () => {

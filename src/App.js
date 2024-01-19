@@ -58,8 +58,7 @@ function App() {
 
   return (
     <>
-    {/* {removeLoader && } */}
-    <Intro />
+    {removeLoader && <Intro />}
       {!loading &&
         <motion.div initial="hidden"
           animate={'visible'}

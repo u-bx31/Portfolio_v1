@@ -23,6 +23,7 @@ const Intro = () => {
         setTimeout(() => {
             requestAnimationFrame(animate)
         }, 2000)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     const animate = (timestamp) => {
