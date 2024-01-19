@@ -41,24 +41,29 @@ const itemsVariants = {
 }
 
 function App() {
-
   const [loading, setLoading] = useState(true)
-
+  const [removeLoader, setRemoveLoader] = useState(true)
 
   useEffect(() => {
 
     setTimeout(() => {
       setLoading(false)
-    }, 3000);
+    }, 1950);
+
+    setTimeout(() => {
+      setRemoveLoader(false)
+    }, 4000);
     setBodyColor('#222328');
   }, [])
 
   return (
     <>
-      {loading ? <Intro /> : (
+    {/* {removeLoader && } */}
+    <Intro />
+      {!loading &&
         <motion.div initial="hidden"
-          animate="visible"
-          variants={content} className="App">
+          animate={'visible'}
+          variants={content} className={''}>
           <motion.header variants={itemsVariants}><CustomNavbar /></motion.header>
           <motion.main variants={itemsVariants}>
             <Hero />
@@ -69,7 +74,7 @@ function App() {
           </motion.main>
           <motion.footer variants={itemsVariants}><Footer /></motion.footer>
         </motion.div>
-      )}
+      }
     </>
 
   );

@@ -1,120 +1,214 @@
 @use "../abstracts" as *;
 
 .c_skills {
-  &_cards{
-    width: 75%;
-  }
-  &_img{
-    width: 50%;
-    @media (max-width:1199px) {
-      width: 60%;
-      margin: 2rem;
-    }
-  }
-  // display icons section
-  &_commands-disp {
-    &_headrs {
-      h2 {
-        font-family: $fontFredoka;
-        font-weight: 400;
-        font-size: 40px;
+	&_cards {
+		width: 75%;
+	}
+	// display icons section
+	&_commands-disp {
+		&_headrs {	
+			&_items {
+				&_logos {
+					background-color: $li-mi-white;
 
-        color: $White;
-      }
-      &_items {
-        &_logos {
-          background-color: $li-mi-white;
+					border-radius: 6px;
+					height: 100px;
+					width: 100px;
+					position: relative;
+					&::after {
+						position: absolute;
+						content: "";
+						background-color: $very-dark-blue;
+						width: 100%;
+						height: 100%;
+						z-index: -1;
+						right: -7px;
+						top: -7px;
+						border-radius: 6px;
+					}
+				}
+			}
+		}
+	}
 
-          border-radius: 6px;
-          height: 95px;
-          width: 95px;
-          position: relative;
-          &::after {
-            position: absolute;
-            content: "";
-            background-color: $very-dark-blue;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            right: -7px;
-            top: -7px;
-            border-radius: 6px;
-          }
-        }
-      }
-    }
-  }
+	@media (max-width: 768px) {
+		// display icons section
+		&_commands-disp {
+			&_headrs {
+				h2 {
+					font-size: 1.6rem;
+				}
+				&_items {
+					&_logos {
+						height: 90px;
+						width: 90px;
+						img {
+							width: 60px;
+						}
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 500px) {
+		&_cards {
+			width: 100%;
+		}
+		// display icons section
+		&_commands-disp {
+			&_headrs {
+				h2 {
+					font-size: 1.5rem;
+				}
+				&_items {
+					&_logos {
+						height: 80px;
+						width: 80px;
+						img {
+							width: 50px;
+						}
+					}
+				}
+			}
+		}
+	}
 
-  @media (max-width: 768px) {
+	//skills card with progress bar
 
-    // display icons section
-    &_commands-disp {
-      &_headrs {
-        h2 {
-          font-size: 1.6rem;
-        }
-        &_items {
-          &_logos {
-            height: 90px;
-            width: 90px;
-            img {
-              width: 60px;
-            }
-          }
-        }
-      }
-    }
-  }
-  @media (max-width: 500px) {
-    &_cards{
-      width: 100%;
-    }
-    // cmd section
-    &_cmd-app {
-      font-size: 1.2rem;
-      line-height: 39px;
-      height: 500px;
+	/*
+	&_cards {
+		width: 100%;
+		&_ca {
+			background-color: $li-mi-white;
+			border-radius: 16px;
+			padding: 12px 12px 0 12px;
+      transition: all ease-in 1000ms;
+			&_progress {
+				position: relative;
+				display: flex;
+				justify-content: center;
+				&_circle {
+					width: 110px;
+					height: 110px;
+					
+					&_trail {
+						stroke: rgb(255, 255, 255);
+						stroke-dasharray: 301.593px, 301.593;
+						stroke-dashoffset: 0;
+						transform: rotate(-90deg);
+						transform-origin: 50px 50px;
+						transition: all ease-in 850ms;
+						fill-opacity: 0;
+					}
+					&_path {
+						stroke: rgb(51, 58, 114);
+						stroke-dasharray: 301.593px, 301.593;
+						transform: rotate(-90deg);
+						transform-origin: 50px 50px;
+						transition: all ease-in 850ms;
+						fill-opacity: 0;
+					}
+				}
+				&_logo {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					border-radius: 6px;
+					height: 70px;
+					width: 70px;
+				}
+			}
+			&_text {
+				background-color: $dark-blue;
+				padding: 10px;
+				width: 170px;
+				border-radius: 16px 16px 0 0;
+				font-size: 18px;
+				margin: 9px 0;
+				font-weight: bold;
+				color: white;
+				text-align: center;
+			}
+		}
+	}
 
-      &_top {
-        height: 50px;
-        background-color: $transparent-black;
-        &::after {
-          position: absolute;
-          content: "";
-          width: 32.96px;
-          height: 31px;
-          border-radius: 14px;
-          background-color: $red;
-          right: 10px;
-          top: 10px;
-        }
-      }
-    }
-    // display icons section
-    &_commands-disp {
-      &_headrs {
-        h2 {
-          font-size: 1.5rem;
-        }
-        &_items {
-          &_logos {
-            height: 80px;
-            width: 80px;
-            img {
-              width: 50px;
-            }
-          }
-        }
-      }
-    }
-  }
-  @media (max-width: 280px) {
-    // cmd section
-    &_cmd-app {
-      font-size: 1rem;
-      line-height: 39px;
-      height: 500px;
+	&_img {
+		width: 50%;
+		@media (max-width: 1199px) {
+			width: 60%;
+			margin: 2rem;
+		}
+	}
 
-    }
-  }
+	@media (max-width: 992px) {
+		&_cards {
+			&_ca {
+				padding: 15px 15px 0 15px;
+				&_progress {
+					&_circle {
+						width: 120px;
+						height: 120px;
+					}
+					&_logo {
+						height: 70px;
+						width: 70px;
+					}
+				}
+				&_text {
+					padding: 9px;
+					width: 150px;
+					font-size: 16px;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+	@media (max-width: 500px) {
+		&_cards {
+			&_ca {
+				padding: 10px 10px 0 10px;
+				&_progress {
+					&_circle {
+						width: 100px;
+						height: 100px;
+					}
+					&_logo {
+						height: 50px;
+						width: 50px;
+					}
+				}
+				&_text {
+					padding: 9px;
+					width: 150px;
+					font-size: 16px;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+	@media (max-width: 364px) {
+		&_cards {
+			&_ca {
+				padding: 8px 8px 0 8px;
+				&_progress {
+					&_circle {
+						width: 80px;
+						height: 80px;
+					}
+					&_logo {
+						height: 30px;
+						width: 30px;
+					}
+				}
+				&_text {
+					padding: 9px;
+					width: 110px;
+					font-size: 12px;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+	*/
 }

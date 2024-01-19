@@ -1,101 +1,110 @@
 @use "../sass/abstracts" as *;
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 
-  /* width */
-  ::-webkit-scrollbar {
-    width: 5px;
-    scroll-behavior: smooth;
-  }
+	/* width */
+	::-webkit-scrollbar {
+		width: 5px;
+		scroll-behavior: smooth;
+		transition: all ease 0.09s;
+	}
 
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: $dark-blue;
-  }
+	/* Track */
+	::-webkit-scrollbar-track {
+		background: $dark-blue;
+	}
 
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-  }
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+		background: #888;
+	}
 
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
-  .btn_link {
-    background-color: transparent;
-    border: none;
-    color: $White;
-    position: relative;
-    cursor: pointer;
-    &:hover {
-      color: $dark-gray;
-    }
-  }
-  
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+		background: #555;
+	}
+	.btn_link {
+		background-color: transparent;
+		border: none;
+		color: $White;
+		position: relative;
+		cursor: pointer;
+		&:hover {
+			color: $dark-gray;
+		}
+	}
 }
-html{
-  scroll-behavior: smooth;
+html {
+	scroll-behavior: smooth;
 }
 body {
-  font-family: $fontMontserrat;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  min-width: 280px;
+	font-family: $fontMontserrat;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	min-width: 280px;
 }
-.not-allowed{
-  cursor: not-allowed !important;
+.not-allowed {
+	cursor: not-allowed !important;
+}
+.c-footer {
+	&_copyright {
+		&_user {
+			text-decoration: none;
+      color: $mid-white;
+		}
+		
+	}
 }
 
 .c_headers {
-  &_arrowIcon {
-    ._svg {
-      stroke: $dark-gray;
-    }
-  }
-  &_text {
-    h3 {
-      font-family: $fontMontserrat;
-      font-weight: 700;
-      font-size: 2.5rem;
-      color: $White;
-      margin: 0;
-    }
-  }
+	&_arrowIcon {
+		._svg {
+			stroke: $dark-gray;
+		}
+	}
+	&_text {
+		h3 {
+			font-family: $fontMontserrat;
+			font-weight: 700;
+			font-size: 2.5rem;
+			color: $White;
+			margin: 0;
+		}
+	}
 
-  @media (max-width: 768px) {
-    &_arrowIcon {
-      ._svg {
-        height: 2rem;
-        width: 2.2rem;
-      }
-    }
-    &_text {
-      h3 {
-        font-size: 2rem;
-      }
-    }
-  }
-  @media (max-width: 500px) {
-    &_arrowIcon {
-      ._svg {
-        height: 1.8rem;
-      }
-    }
-    &_text {
-      h3 {
-        font-size: 1.9rem;
-      }
-    }
-  }
-  @media (max-width: 280px) {
-    &_text {
-      h3 {
-        font-size: 1.8rem;
-      }
-    }
-  }
+	@media (max-width: 768px) {
+		&_arrowIcon {
+			._svg {
+				height: 2rem;
+				width: 2.2rem;
+			}
+		}
+		&_text {
+			h3 {
+				font-size: 2rem;
+			}
+		}
+	}
+	@media (max-width: 500px) {
+		&_arrowIcon {
+			._svg {
+				height: 1.8rem;
+			}
+		}
+		&_text {
+			h3 {
+				font-size: 1.9rem;
+			}
+		}
+	}
+	@media (max-width: 280px) {
+		&_text {
+			h3 {
+				font-size: 1.8rem;
+			}
+		}
+	}
 }

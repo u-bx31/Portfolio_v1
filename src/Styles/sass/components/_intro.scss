@@ -2,8 +2,30 @@
 
 @use "../abstracts" as *;
 
-.c-intro{
-    background-color: $black;
-    z-index: 999;
-    position: fixed;
+.c-intro {
+	height: calc(100vh + 200px);
+	width: 100%;
+	position: fixed;
+	z-index: 99999;
+	svg {
+		height: 100%;
+		width: 100%;
+		path {
+			stroke: #222328;
+			fill: #18191d;
+			stroke-width: 1px;
+		}
+	}
+	&_text {
+		position: absolute;
+		left: 50%;
+		top: calc(59% - 200px);
+		transform: translate(-50%, -50%);
+		width: 129px !important;
+		height: 28px !important;
+		path {
+			stroke: #d9d9d9 !important;
+			fill: #d9d9d9 !important;
+		}
+	}
 }

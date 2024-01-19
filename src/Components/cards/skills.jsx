@@ -1,35 +1,20 @@
-import { Circle } from "rc-progress";
-import { motion, useInView } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
-
-const SkillsCard = ({condition}) => {
-  const [percent, setPercent] = useState(0);
-  const ref = useRef(null)
-  const isInView = useInView(ref,{
-    margin: '-100px 0px',
-  })
-
-  useEffect(() => {
-    if(isInView){
-      setInterval(() => {
-        setPercent(20)
-      }, 2000);
-    }
-  }, [isInView])
-
-  const itemVaritans2 = {
-    hidden: {
-        opacity: 0,
-    },
-    visible: {
-        opacity: 1, 
-    },
-}
+const SkillsCard = ({ percent, img_skill, header }) => {
+  const circleLength = 2 * Math.PI * 48 ;
   return (
-    // add background to this cards with borer of 6 px and modified color of each img 
-    <motion.div ref={ref} variants={itemVaritans2}  >
-      <Circle style={{width : '120px',height: '120px'}} percent={percent} strokeWidth={4} strokeColor="#D3D3D3" />
-    </motion.div>
+    <div className="c_skills_cards_ca">
+      <div className="c_skills_cards_ca_progress">
+        <svg className="c_skills_cards_ca_progress_circle" viewBox="0 0 100 100" role="presentation">
+          <circle className="c_skills_cards_ca_progress_circle_trail" r="48" cx="50" cy="50" stroke="#FFFF" strokeLinecap="round" strokeWidth="2px" >
+          </circle>
+          <circle strokeDashoffset={circleLength - (percent/100) * circleLength} className="c_skills_cards_ca_progress_circle_path" r="48" cx="50" cy="50" strokeLinecap="round" strokeWidth="4" opacity="1" >
+          </circle>
+        </svg>
+        
+
+        <img src={img_skill} className="c_skills_cards_ca_progress_logo " loading='lazy' alt="" />
+      </div>
+      <p className="c_skills_cards_ca_text"> {header} {percent || 0}%</p>
+    </div>
   );
 }
 

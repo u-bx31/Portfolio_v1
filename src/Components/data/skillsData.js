@@ -13,83 +13,89 @@ import img_laravel from '../../images/Logos/laravel.svg';
 import img_nextjs from '../../images/Logos/nextjs.svg';
 import img_figma from '../../images/Logos/figma.svg';
 import img_typescript from '../../images/Logos/typescript.svg';
+import img_tailwind from '../../images/Logos/tailwind.svg';
 
 
 const skillsData = [
     {
         header:'Html',
-        percent : '',
+        percent : '95',
         img_skil: img_html,
     },
     {
-        header:'JavaScript',
-        percent : '',
-        img_skil: img_js
-    },
-    {
-        header:'Sass',
-        percent : '',
-        img_skil: img_sass
-    },
-    {
         header:'Css',
-        percent : '',
+        percent : '95',
         img_skil: img_css
     },
     {
+        header:'Sass',
+        percent : '60',
+        img_skil: img_sass
+    },
+    {
         header:'Bootstrap',
-        percent : '',
+        percent : '70',
         img_skil: img_bootstrap
     },
     {
+        header:'Taillwind css',
+        percent : '80',
+        img_skil: img_tailwind
+    },
+    {
+        header:'JavaScript',
+        percent : '90',
+        img_skil: img_js
+    },
+    {
         header:'React js',
-        percent : '',
+        percent : '70',
         img_skil: img_react
     },
     {
+        header:'TypeScript',
+        percent : '60',
+        img_skil: img_typescript
+    },
+    {
         header:'C#',
-        percent : '',
+        percent : '50',
         img_skil: img_csharp
     },
     {
         header:'Asp.net',
-        percent : '',
+        percent : '50',
         img_skil: img_dotnet
     },
     {
         header:'Sql',
-        percent : '',
+        percent : '50',
         img_skil: img_sql
     },
     {
+        header:'NextJs',
+        percent : '70',
+        img_skil: img_nextjs
+    },
+    {
+        header:'Laravel',
+        percent : '60',
+        img_skil: img_laravel
+    },
+    {
+        header:'Figma',
+        percent : '50',
+        img_skil: img_figma
+    },
+    {
         header:'Git',
-        percent : '',
+        percent : '90',
         img_skil: img_git
     },
     {
         header:'Github',
         percent : '',
         img_skil: img_github
-    },
-    {
-        header:'NextJs',
-        percent : '',
-        img_skil: img_nextjs
-    },
-    {
-        header:'Laravel',
-        percent : '',
-        img_skil: img_laravel
-    },
-    {
-        header:'TypeScript',
-        percent : '',
-        img_skil: img_typescript
-    },
-    {
-        header:'Figma',
-        percent : '',
-        img_skil: img_figma
     },
 ]
 

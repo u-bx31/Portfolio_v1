@@ -41,8 +41,8 @@ const Projects = () => {
                             )
                         })
                         return (
-                            <MainMotion condition={true} className={`d-flex  ${position === 'left' ? 'flex-md-row-reverse' : position === 'right' ? 'flex-md-row' : ''} flex-column-reverse align-items-center py-lg-2 py-3`} key={index}>
-                                <div className="c_project_content w-100 px-md-4 px-2 py-md-0 py-2">
+                            <MainMotion key={index} condition={true} className={`d-flex  ${position === 'left' ? 'flex-md-row-reverse' : position === 'right' ? 'flex-md-row' : ''} flex-column-reverse align-items-center py-lg-2 py-3`} >
+                                <div key={index} className="c_project_content w-100 px-md-4 px-2 py-md-0 py-2">
                                     <h2>{title}</h2>
                                     {!isCompleted && <h5 class="badge bg-warning text-dark">InProgress</h5>}
                                     <p class="overflow-hidden">{description.length >= 300 ? `${description.slice(0, 150)}...` : description}</p>

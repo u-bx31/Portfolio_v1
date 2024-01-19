@@ -43,8 +43,8 @@ const Contact = () => {
                                     </div>
                                 </ItemMotion>
                                 <ItemMotion className='px-sm-3 px-1 pt-lg-0 pt-2 pb-lg-0 pb-4'>
-                                    I’m interested in web development I built custom websites and also windows form applications.<br />
-                                    these are my accounts that you can contact me on.
+                                    Feel free to reach out contact me to discuss potential collaborations or opportunities. Whether you have a project in mind or just want to say hello<br />
+                                    those are my accounts that you can contact me on.
                                 </ItemMotion>
                             </motion.div>
                             <div className="c-contact_content_items_links d-flex flex-column p-2 justify-content-center ">
